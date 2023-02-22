@@ -1,0 +1,78 @@
+.nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 20px 0;
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.14);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+/* Logo and menu icon */
+
+.nav--left {
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-left: 30px;
+}
+
+.nav--left .search-icon {
+    margin: 0 10px 0 0 ;
+    padding: 0;
+}
+
+.nav--left img {
+    width: 120px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+/* Search bar  */
+
+.nav--middle {
+    flex: 0 0 65%;
+    max-width: 0 0 65%;
+    display: flex;
+}
+
+.nav--middle input {
+    height: 50px;
+    width: 300px;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #367588;
+    outline: none;
+    padding: 0 20px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+
+.nav--middle .icon-holder {
+    height: 40px;
+    width: 70px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #F5F5F5;
+    border: 1px solid #367588;
+    border-radius: 0 30px 30px 0;
+}
+
+/* Notification & profile pic */
+
+.nav--right {
+    flex: 0 0 13%;
+    max-width: 0 0 13%;
+    display: flex;
+    float: right;
+}
+
+.nav--right .icon-holder {
+    height: 40px;
+    width: 70px;
+    padding-top: 10px;
+    margin-right: 15px;
+    text-align: center;
+}
