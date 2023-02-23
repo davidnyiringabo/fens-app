@@ -1,10 +1,15 @@
 import './App.css'
-import Sample from './pages/Sample.js'
-
+import Schedules from './pages/Schedule/Schedule'
+import Navbar from './components/Navbar/Navbar'
+import Sidebar from './components/Sidebar/Sidebar'
 function App() {
 
   return (
-      <Sample />
+    <>
+      <Navbar />
+      <Sidebar />
+      <Schedules />
+    </>
   )
 }
 
