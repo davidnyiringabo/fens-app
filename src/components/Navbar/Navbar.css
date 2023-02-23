@@ -32,13 +32,14 @@
 /* Search bar  */
 
 .nav--middle {
-    flex: 0 0 65%;
-    max-width: 0 0 65%;
+    flex: 0 0 55%;
+    max-width: 0 0 55%;
     display: flex;
+    justify-content: center;
 }
 
 .nav--middle input {
-    height: 50px;
+    height: 45px;
     width: 300px;
     border-radius: 30px 0 0 30px;
     border: 1px solid #367588;
@@ -51,7 +52,7 @@
 
 
 .nav--middle .icon-holder {
-    height: 40px;
+    height: 35px;
     width: 70px;
     padding-top: 10px;
     text-align: center;
@@ -63,10 +64,11 @@
 /* Notification & profile pic */
 
 .nav--right {
-    flex: 0 0 13%;
-    max-width: 0 0 13%;
+    flex: 0 0 18%;
+    max-width: 0 0 18%;
     display: flex;
-    float: right;
+    justify-content: end;
+    position: relative;
 }
 
 .nav--right .icon-holder {
