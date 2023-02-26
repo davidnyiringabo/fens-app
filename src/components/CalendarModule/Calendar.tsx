@@ -1,37 +1,125 @@
 import { FaArrowDown, FaArrowUp } from "react-icons/fa"
 import { MdOutlineCalendarViewMonth, MdOutlineToday } from "react-icons/md"
 import {HiBookmark} from 'react-icons/hi'
-
+import Days from "../Days/Days"
+import Months from "../Months/Months"
+import Years from "../Years/Years"
 import './Calendar.css'
+import { useState, useEffect } from 'react'
+
 export default function CustomCalendar() {
+
+    const [month,setMonth] = useState(2);
+    const [monthName, setMonthName] = useState('');
+    const [showDay, setShowDay] = useState(false);
+    const [showMonth, setShowMonth ] = useState(false);
+    const [showYear, setShowYear] = useState(false) 
+
+
+    function incrementMonths () {
+        console.log("Incrementing")
+        setMonth(month+1)
+    }
+
+    function decrementMonths () {
+        console.log("Decrementing")
+        setMonth(month -1)
+    }
+
+
+    function nameMonth(month: any) {
+    switch(month) {
+        case 1:
+            setMonthName("January")
+            break;
+        case 2:
+            setMonthName("February")
+            break;
+        case 3: 
+            setMonthName("March")
+            break;
+        case 4: 
+            setMonthName("April")
+            break;
+        case 5: 
+            setMonthName("May")
+            break;
+        case 6: 
+            setMonthName("June")
+            break;
+        case 7: 
+            setMonthName("July")
+            break;
+        case 8: 
+            setMonthName("August")
+            break;
+        case 9: 
+            setMonthName("September")
+            break;
+        case 10: 
+            setMonthName("October")
+            break;
+        case 11: 
+            setMonthName("November")
+            break;
+        case 12: 
+            setMonthName("Decemeber")
+            break;
+        }
+    } 
+    
+    function showDays() {
+        console.log("days component")
+        setShowDay(!showDay)
+    }
+
+    function showMonths () {
+        console.log("months component")
+        setShowMonth(!showMonth)
+    }
+
+    function showYears() {
+        console.log("years component")
+        setShowYear(!showYear)
+    }
+
+    useEffect(()=>{
+        nameMonth(month)
+    })
+
     return (
         <div className="calendar--container">
             <div className="calendar--header">
                 <div className="calendar--header--left">
                     <div className="calendar--header--left-icons">
-                        <FaArrowDown />
-                        <FaArrowUp />
+                        <FaArrowDown onClick={decrementMonths}/>
+                        <FaArrowUp onClick={incrementMonths}/>
                     </div>
                     <div className="calendar--header--month--year">
-                        February 2023
+                        <span id="month">{monthName}</span>  2023
                     </div>
                 </div>
                 <div className="calendar--header--right">
-                    <div className="day--holder">
+                    <div className="day--holder" onClick={showDays}>
                         <div className="icon">
                             <MdOutlineToday />
+                            {
+                                showDay ? <Days/> : ""
+                            }
                         </div>
                         <p className="title">Day</p>
                     </div>
-                    <div className="month--holder">
+                    <div className="month--holder" onClick={showMonths}>
                         <div className="icon">
                             <MdOutlineCalendarViewMonth />
+                            { showMonth ? <Months /> : ""}
                         </div>
                         <p className="title">Month</p>
                     </div>
-                    <div className="year--holder">
+                    <div className="year--holder"  onClick={showYears}>
                         <div className="icon">
-                            <MdOutlineCalendarViewMonth />
+                            <MdOutlineCalendarViewMonth/>
+                            { showYear ? <Years /> : "" }
                         </div>
                         <p className="title">Year</p>
                     </div>

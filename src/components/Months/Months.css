@@ -1,0 +1,26 @@
+.months--container {
+    width: 120px;
+    background-color: red;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    left: 122px;
+    overflow-y: auto;
+    font-size: 18px;
+    /* display: none; */
+}
+
+.months--container ul {
+    list-style: none;
+    text-align: center;
+}
+
+.months--container ul li {
+    line-height: 30px;
+}
+
+.months--container ul li:hover {
+    background-color: #000;
+    color: white;
+}

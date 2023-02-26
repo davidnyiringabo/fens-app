@@ -1,0 +1,21 @@
+.days--container {
+    width: 120px;
+    background-color: red;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    left: 0px;
+    overflow-y: auto;
+    /* display: none; */
+}
+
+.days--container ul {
+    list-style: none;
+    text-align: center;
+}
+
+.days--container ul li:hover {
+    background-color: #000;
+    color: white;
+}
