@@ -1,7 +1,10 @@
 import './ScheduleList.css'
 import { MdAddToPhotos } from 'react-icons/md'
+// import { useNavigate } from 'react-router-dom'
 
 export default function ScheduleList() {
+    // const navigate = useNavigate();
+    
     return (
         <>
             <div className="list--container">
