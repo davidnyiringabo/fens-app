@@ -65,6 +65,12 @@ export default function CustomCalendar() {
         case 12: 
             setMonthName("Decemeber")
             break;
+        case month>12:
+            setMonth(12)
+            break;
+        case month<1:
+            setMonth(1)
+            break;
         }
     } 
     

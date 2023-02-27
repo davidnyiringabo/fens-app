@@ -1,9 +1,12 @@
 .days--container {
     width: 120px;
-    background-color: red;
+    border: 1px solid #2688A6;
+    color: white;
+    background-color: #2688A6;
     position: absolute;
     margin: 0;
     padding: 0;
+    z-index: 1;
     height: 220px;
     left: 0px;
     overflow-y: auto;
