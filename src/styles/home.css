@@ -3,6 +3,7 @@ body {
   background-color: white;
   text-align: center;
   font-family: "Inter", sans-serif;
+  font-size: large;
 }
 
 a {
@@ -15,15 +16,14 @@ h2 {
 }
 
 .top {
-  padding: 10px;
   display: flex;
-  height: 60px;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo img {
-  transform: scale(0.7);
+  transform: scale(0.55);
 }
 
 .logo {
@@ -36,17 +36,13 @@ h2 {
   flex-grow: 0.5;
   padding: 10px;
   display: flex;
+  flex-shrink: 2;
   justify-content: flex-end;
 }
 
 .links a {
-  height: 100%;
   font-size: 20;
-  padding: 15px;
-}
-
-.register {
-  padding: 15px;
+  margin: 0 10px;
 }
 
 .register .reglink {
@@ -93,25 +89,29 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0 40px 0;
-  margin-bottom: 50px;
+  padding: 0 0 12vh 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.first .svgs {
+  transform: scale(1.29);
 }
 
 #second {
   position: absolute;
-  right: 60px;
   left: 2%;
-  top: 70px;
-  overflow: hidden;
-  transform: scale(0.8);
+  right: 0%;
+  top: 10%;
   z-index: -4;
 }
 
 .intro {
   position: absolute;
-  left: 30%;
-  margin: 0 auto;
+  align-self: center;
   color: white;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .intro h1 {
@@ -121,7 +121,9 @@ h2 {
 
 /*################################## SERVICES*/
 .service-card, .subscription {
+  display: flex;
   flex-grow: 2;
+  align-items: center;
   justify-content: center;
   margin: 10px;
 }
@@ -131,18 +133,22 @@ h2 {
   background-color: white;
   flex-direction: column;
   max-width: 18vw;
+  min-width: 18vw;
   min-height: 20em;
   padding: 23px;
-  margin: 0 25px 35px 25px;
+  margin: 0 50px 35px 40px;
   border-radius: 19px;
 }
 
 .middle {
+  position: relative;
+}
+
+.middle .mid {
   position: absolute;
-  bottom: -115%;
   z-index: -2;
-  left: -5%;
-  bottom: -110%;
+  top: 0;
+  left: 0;
 }
 
 .card a {
@@ -240,6 +246,7 @@ h2 {
 /*########################## FOOTER*/
 .s {
   z-index: -2;
+  width: 100%;
   position: absolute;
 }
 
@@ -248,12 +255,15 @@ h2 {
   height: 80vh;
   margin: 30px 0 0 0;
   overflow: hidden;
+  bottom: 0;
 }
 
 #footer {
   position: absolute;
-  top: 10%;
-  left: 0;
+  top: 30%;
+  right: 80;
+  left: -19%;
+  bottom: 60%;
 }
 
 .footer-content {
@@ -338,7 +348,7 @@ h2 {
   border: 1px solid #367588;
 }
 
-.register, .service-card, .subscription, .card, .contact {
+.register, .card, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;

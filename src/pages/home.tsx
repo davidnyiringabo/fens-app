@@ -1,7 +1,5 @@
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
-import footer from '../assets/fotter.svg'
-import footer2 from '../assets/footer2.svg'
 import { Card ,Card2,Icon} from '../components/card'
 import { Bell, Feedback, Notify,Middle, Header, Header2, Footer2, Fotter } from '../assets/svg'
 import { FaInstagram,FaFacebookF,FaFacebookSquare,FaTwitter,FaDiscord,FaPhoneAlt,FaLinkedin,FaEnvelope,FaArrowUp,FaLinkedinIn,FaMapMarkerAlt } from "react-icons/fa";
@@ -20,16 +18,13 @@ export const Home = ()=>{
                     </div>
                     <div className="register">
                         <div className="reglink" id='link1'><Link to='/login'>Sign Up</Link></div>
-                        
                         <div className="reglink"><Link to='/signup' >Log In</Link></div>
                     </div>
             </div>
             <div className="first">
                 <div className="svg">
-                 {/* <img src={header}  />  */}
                  <Header />
                  <Header2 />
-                 {/* <img src={header2} id="second"/>  */}
                 </div>
                 <div className="intro">
                 <h1>The Future of Communication</h1>
@@ -43,8 +38,8 @@ export const Home = ()=>{
                     <Card name = 'Notify' svg = {<Bell/>} desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
                     <Card name = 'Feedback' svg = {<Feedback/>} desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
                 </div> 
-                <div className="svg middle">
-                    <Middle/>
+                <div className="middle">
+                <Middle/>
                 </div>
             </div>
             <div className="section" id="pricing">
@@ -93,44 +88,42 @@ export const Home = ()=>{
                     </div>
                 </div>
             </div>
-            <div className="footer">
+        <div className="footer">
             <div className="s">
                 <Footer2/>
                 <Fotter/>
-                 {/* <img src={footer2}/> */}
-                 {/* <img src={footer} id='footer' />  */}
             </div>
-                <div className="footer-content">
-                    <div className="foot-description">
-                        <h2>SNoF Technologies</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea quam.chitecto repellendus commodi? Temporibus fugiat pariatur nisi dignissimos esse.</p>
-                        <div className="social-media">
-                            <FaInstagram/>
-                            <FaFacebookSquare/>
-                            <FaLinkedin/>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="weblinks">
-                        <h2>Website Links</h2>
-                        <p>Home</p>
-                        <p>Services</p>
-                        <p>Pricing</p>
-                        <p>Contact</p>
-                        <p>FAQs</p>
-                    </div>
-                    <div className="web-services">
-                        <h2>Services</h2>
-                        <p>Schedule</p>
-                        <p>Notify</p>
-                        <p>Feedback</p>
+            <div className="footer-content">
+                <div className="foot-description">
+                    <h2>SNoF Technologies</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea quam.chitecto repellendus commodi? Temporibus fugiat pariatur nisi dignissimos esse.</p>
+                    <div className="social-media">
+                        <FaInstagram/>
+                        <FaFacebookSquare/>
+                        <FaLinkedin/>
                     </div>
                 </div>
-                <div className="copyright">
-                    <hr />
-                    <p>@copyrights SNoF -All right reserved</p>
+                <hr />
+                <div className="weblinks">
+                    <h2>Website Links</h2>
+                    <p>Home</p>
+                    <p>Services</p>
+                    <p>Pricing</p>
+                    <p>Contact</p>
+                    <p>FAQs</p>
                 </div>
+                <div className="web-services">
+                    <h2>Services</h2>
+                    <p>Schedule</p>
+                    <p>Notify</p>
+                    <p>Feedback</p>
+                </div>
+            </div>
+            <div className="copyright">
+                <hr />
+                <p>@copyrights SNoF -All right reserved</p>
             </div>
         </div>
+    </div>
     )
 }
