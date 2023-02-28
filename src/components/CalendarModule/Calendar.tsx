@@ -8,72 +8,28 @@ import './Calendar.css'
 import { useState, useEffect } from 'react'
 
 export default function CustomCalendar() {
-
-    const [month,setMonth] = useState(2);
-    const [monthName, setMonthName] = useState('');
+    const [date, setDate] = useState(new Date());
+    const [month,setMonthName] = useState('');
+    const [year,setYearName] = useState('')
     const [showDay, setShowDay] = useState(false);
     const [showMonth, setShowMonth ] = useState(false);
     const [showYear, setShowYear] = useState(false) 
+    const currentDate = new Date(date);
 
+    useEffect(()=>{
+        nameMonths(currentDate)
+    })
 
     function incrementMonths () {
-        console.log("Incrementing")
-        setMonth(month+1)
+        currentDate.setMonth(currentDate.getMonth() + 1)
+        setDate(currentDate)
     }
 
     function decrementMonths () {
-        console.log("Decrementing")
-        setMonth(month -1)
+        currentDate.setMonth(currentDate.getMonth() - 1)
+        setDate(currentDate)
     }
 
-
-    function nameMonth(month: any) {
-    switch(month) {
-        case 1:
-            setMonthName("January")
-            break;
-        case 2:
-            setMonthName("February")
-            break;
-        case 3: 
-            setMonthName("March")
-            break;
-        case 4: 
-            setMonthName("April")
-            break;
-        case 5: 
-            setMonthName("May")
-            break;
-        case 6: 
-            setMonthName("June")
-            break;
-        case 7: 
-            setMonthName("July")
-            break;
-        case 8: 
-            setMonthName("August")
-            break;
-        case 9: 
-            setMonthName("September")
-            break;
-        case 10: 
-            setMonthName("October")
-            break;
-        case 11: 
-            setMonthName("November")
-            break;
-        case 12: 
-            setMonthName("Decemeber")
-            break;
-        case month>12:
-            setMonth(12)
-            break;
-        case month<1:
-            setMonth(1)
-            break;
-        }
-    } 
-    
     function showDays() {
         console.log("days component")
         setShowDay(!showDay)
@@ -89,9 +45,13 @@ export default function CustomCalendar() {
         setShowYear(!showYear)
     }
 
-    useEffect(()=>{
-        nameMonth(month)
-    })
+    function nameMonths(currentDate: Date) {
+        var stringDate = currentDate.toString();
+        var response = stringDate.split(" ",5);
+        console.log(response)
+        setMonthName(response[1])
+        setYearName(response[3])
+    }
 
     return (
         <div className="calendar--container">
@@ -102,7 +62,7 @@ export default function CustomCalendar() {
                         <FaArrowUp onClick={incrementMonths}/>
                     </div>
                     <div className="calendar--header--month--year">
-                        <span id="month">{monthName}</span>  2023
+                        <span id="month">{month}</span>  {year}
                     </div>
                 </div>
                 <div className="calendar--header--right">
