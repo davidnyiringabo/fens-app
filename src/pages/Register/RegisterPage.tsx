@@ -14,7 +14,6 @@ import Ellipse2 from "./../../assets/second-ellipse.svg";
 import "./RegisterPage.css";
 
 export default function RegisterPage() {
-  let value = "Sign Up";
   const ref = useRef(null);
   useEffect(() => {
     const prevBtns = document.querySelectorAll(".btn-prev");
