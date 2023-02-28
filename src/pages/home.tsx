@@ -1,11 +1,9 @@
 import '../styles/home.css'
 import { Link } from 'react-router-dom'
-import header from '../assets/header.svg'
-import header2 from '../assets/header2.svg'
 import footer from '../assets/fotter.svg'
 import footer2 from '../assets/footer2.svg'
 import { Card ,Card2,Icon} from '../components/card'
-import { Bell, Feedback, Notify,Middle, Header, Header2 } from '../assets/svg'
+import { Bell, Feedback, Notify,Middle, Header, Header2, Footer2, Fotter } from '../assets/svg'
 import { FaInstagram,FaFacebookF,FaFacebookSquare,FaTwitter,FaDiscord,FaPhoneAlt,FaLinkedin,FaEnvelope,FaArrowUp,FaLinkedinIn,FaMapMarkerAlt } from "react-icons/fa";
 export const Home = ()=>{
     return(
@@ -97,8 +95,10 @@ export const Home = ()=>{
             </div>
             <div className="footer">
             <div className="s">
-                 <img src={footer2}/>
-                 <img src={footer} id='footer' /> 
+                <Footer2/>
+                <Fotter/>
+                 {/* <img src={footer2}/> */}
+                 {/* <img src={footer} id='footer' />  */}
             </div>
                 <div className="footer-content">
                     <div className="foot-description">
