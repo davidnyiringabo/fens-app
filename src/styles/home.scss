@@ -4,34 +4,42 @@ body{
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
-
-%border{
-    border: 1px solid #367588;
+a{
+    text-decoration: none;
+    color:black
 }
-%card{
+h2{
+    margin-bottom: 40px
+}
+.top{
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
+    height: 60px;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-}
-.card a{
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #367588;
-    color: white;
-    // margin-top: 40px;
-    font-weight:bold;
-}
-.text li,ul{
-    margin: 10px;
-    list-style: circle;
 }
 .logo img{
     transform: scale(0.7);
 }
-a{
-    text-decoration: none;
-    color:black
+.logo{
+    display: flex;
+    padding: 20px;
+    justify-self: flex-start;
+}
+.links{
+    flex-grow: 0.5;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.links a{
+    height: 100%;
+    font-size: 20;
+    padding: 15px;
+}
+
+.register{
+    padding: 15px;
 }
 .register .reglink {
     @extend %border;
@@ -52,52 +60,62 @@ a{
 }
 #link1 a{
     color: #367588
-
 }
 .register{
     @extend %card;
     width: 15%;
 }
-//navigation
-.top{
-    padding: 10px;
+/*####################################### GENERAL BODY STYLING*/ 
+
+.section h3{
+    // color: red;
+    margin-bottom: 20px ;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+.section h2{
+    font-size: 2em;
+    // color: red
+}
+/*####################################### */ 
+.first {
+    position: relative;
+    overflow: hidden;
     display: flex;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-}
-.links{
-    flex-grow: 0.5;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
-.register{
-    padding: 15px;
-}
-.logo{
-    display: flex;
-    padding: 20px;
-    justify-self: flex-start;
-}
-.links a{
-    height: 100%;
-    font-size: 20;
-    padding: 15px;
-}
-// cards
-.subscription .card{
-    display: flex; 
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding:0 0 40px 0;
+    margin-bottom: 50px;
 }
+#second{
+    position: absolute;
+    right:60px;
+    left: 2%;
+    top:70px;
+    overflow: hidden;
+    transform: scale(0.8);
+    z-index: -4;
+}
+.intro{
+    position: absolute;
+    // top: 30%;
+    left:30%;
+    margin: 0 auto;
+    color: white;
+    // font-weight: bold;
+}
+.intro h1{
+    font-weight: bold;
+    margin: 10px;
+}
+/*################################## SERVICES*/
 .service-card,.subscription{
     @extend %card;
     flex-grow: 2;
     justify-content: center;
     margin: 10px;
 }
+/*############################### CARDS*/
 .card{
     @extend %card;
     @extend %border;
@@ -109,25 +127,35 @@ a{
     margin: 0 25px 35px 25px;
     border-radius: 19px;
 }
-.icon{
-    @extend %border;
-    width: 100px;
-    height: 100px;
-    display: flex;
+.middle{
+    position: absolute;
+    bottom: -115%;
+    z-index: -2;
+    left: -5%;
+    bottom: -110%; 
+  }
+.card a{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #367588;
+    color: white;
+    // margin-top: 40px;
+    font-weight:bold;
+}
+/*################################## SUBSCRIPTION*/
+
+.subscription .card{
+    display: flex; 
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-bottom: 30px;
+    justify-content: space-between;
 }
-.service-card h3{
-    margin-bottom: 20px ;
-    font-weight: 600;
-    font-size: 45;
+.text li,ul{
+    margin: 10px;
+    list-style-position: inside;
+    list-style: circle;
 }
-h2{
-    margin-bottom: 40px
-}
-//contact
+/*##################################   CONTACT*/
 .contact{
     @extend %card;
     flex-wrap: wrap-reverse;
@@ -136,10 +164,7 @@ h2{
     flex-grow: 1.5;
     display: flex;
     flex-direction: column;
-    // background-color: green;
     align-items: center;
-    // justify-self: flex-start;
-    // align-self: flex-start;
     margin: 50px;
 }
 .contact-form {
@@ -165,11 +190,7 @@ h2{
     margin:20px 10px 0;
     outline-width: 0;
 }
-%button{
-    width: 75px;
-    height: 25px;
-    margin: 20px;
-}
+
 .contact-form  form a{
     @extend %button;
     margin: 40px 20px 0 0;
@@ -190,38 +211,18 @@ h2{
     left: 15%;
     background-color: #EEEEEE;
 }
-//top
-#second{
-    position: absolute;
-    right:60px;
-    left: 2%;
-    top:70px;
-    overflow: hidden;
-    transform: scale(0.8);
-    z-index: -4;
-}
-.first {
-    position: relative;
-    overflow: hidden;
+.icon{
+    @extend %border;
+    width: 100px;
+    height: 100px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding:0 0 40px 0;
-    margin-bottom: 50px;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
-.intro{
-    position: absolute;
-    // top: 30%;
-    left:30%;
-    margin: 0 auto;
-    color: white;
-    // font-weight: bold;
-}
-.intro h1{
-    font-weight: bold;
-    margin: 10px;
-}
-//fotter
+
+/*########################## FOOTER*/
 .s{
     z-index: -2;
     position: absolute;
@@ -237,13 +238,7 @@ h2{
     top: 10%;
     left: 0;
 }
-  .middle{
-    position: absolute;
-    bottom: -115%;
-    z-index: -2;
-    left: -5%;
-    bottom: -110%; 
-  }
+
   .footer-content{
     display: flex;
     align-content: center;
@@ -304,4 +299,19 @@ h2{
     text-align: center;
     left: 20px;
     right: 20px;
+}
+/*################################## OTHER*/
+%button{
+    width: 75px;
+    height: 25px;
+    margin: 20px;
+}
+%border{
+    border: 1px solid #367588;
+}
+%card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }

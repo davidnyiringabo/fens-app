@@ -5,7 +5,7 @@ import header2 from '../assets/header2.svg'
 import footer from '../assets/fotter.svg'
 import footer2 from '../assets/footer2.svg'
 import { Card ,Card2,Icon} from '../components/card'
-import { Bell, Feedback, Notify,Middle } from '../assets/svg'
+import { Bell, Feedback, Notify,Middle, Header, Header2 } from '../assets/svg'
 import { FaInstagram,FaFacebookF,FaFacebookSquare,FaTwitter,FaDiscord,FaPhoneAlt,FaLinkedin,FaEnvelope,FaArrowUp,FaLinkedinIn,FaMapMarkerAlt } from "react-icons/fa";
 export const Home = ()=>{
     return(
@@ -28,8 +28,10 @@ export const Home = ()=>{
             </div>
             <div className="first">
                 <div className="svg">
-                 <img src={header}  /> 
-                 <img src={header2} id="second"/> 
+                 {/* <img src={header}  />  */}
+                 <Header />
+                 <Header2 />
+                 {/* <img src={header2} id="second"/>  */}
                 </div>
                 <div className="intro">
                 <h1>The Future of Communication</h1>
@@ -55,40 +57,42 @@ export const Home = ()=>{
                     <Card2 title='Ultimate' price='$10 Per month'  desc='For business just  getting started.' feature0='Shedule for event' feature1='Shedule for event' feature2='Shedule for event' />
                 </div>
             </div>
-            <h2>Contact Us</h2>
-            <div className="contact" id="contact">
-                <div className="contact-info">
-                    <div className='location'> 
-                        <div>
-                            <FaMapMarkerAlt/>
-                            <p>KN Street 256 KIGALI</p>
+            <div className="section" id="contact">
+                <h2>Contact Us</h2>
+                <div className="contact">
+                    <div className="contact-info">
+                        <div className='location'> 
+                            <div>
+                                <FaMapMarkerAlt/>
+                                <p>KN Street 256 KIGALI</p>
+                            </div>
+                            <div>
+                                <FaPhoneAlt/>
+                                <p>+250783490734</p>
+                            </div>
+                            <div>
+                                <FaEnvelope/>
+                                <p>info@SNoF-Labs.com</p>
+                            </div>
                         </div>
-                        <div>
-                            <FaPhoneAlt/>
-                            <p>+250783490734</p>
-                        </div>
-                        <div>
-                            <FaEnvelope/>
-                            <p>info@SNoF-Labs.com</p>
+                        <div className="social-medial">
+                            <Icon icon = {<FaInstagram/>}/>
+                            <Icon icon = {<FaFacebookF/>}/>
+                            <Icon icon = {<FaTwitter/>}/>
+                            <Icon icon = {<FaLinkedinIn/>}/>
+                            <Icon icon = {<FaDiscord/>}/>
                         </div>
                     </div>
-                    <div className="social-medial">
-                        <Icon icon = {<FaInstagram/>}/>
-                        <Icon icon = {<FaFacebookF/>}/>
-                        <Icon icon = {<FaTwitter/>}/>
-                        <Icon icon = {<FaLinkedinIn/>}/>
-                        <Icon icon = {<FaDiscord/>}/>
+                    <div className="contact-form">
+                        <form action="post">
+                            <input type="text" placeholder='First name'  />
+                            <input type="text"  placeholder='Email' />
+                            <textarea cols={8} rows={10}  placeholder='Message' ></textarea>
+                            <a href='#contact'>Send
+                                <i></i>
+                            </a>
+                            </form>
                     </div>
-                </div>
-                <div className="contact-form">
-                    <form action="post">
-                        <input type="text" placeholder='First name'  />
-                        <input type="text"  placeholder='Email' />
-                        <textarea cols={8} rows={10}  placeholder='Message' ></textarea>
-                        <a href='#contact'>Send
-                            <i></i>
-                        </a>
-                        </form>
                 </div>
             </div>
             <div className="footer">
@@ -102,9 +106,7 @@ export const Home = ()=>{
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea quam.chitecto repellendus commodi? Temporibus fugiat pariatur nisi dignissimos esse.</p>
                         <div className="social-media">
                             <FaInstagram/>
-
                             <FaFacebookSquare/>
-
                             <FaLinkedin/>
                         </div>
                     </div>
