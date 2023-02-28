@@ -7,7 +7,6 @@ export const Notify = ()=>{
     return <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M24.975 0C11.175 0 0 11.2 0 25C0 38.8 11.175 50 24.975 50C38.8 50 50 38.8 50 25C50 11.2 38.8 0 24.975 0ZM25 45C13.95 45 5 36.05 5 25C5 13.95 13.95 5 25 5C36.05 5 45 13.95 45 25C45 36.05 36.05 45 25 45ZM26.25 12.5H22.5V27.5L35.625 35.375L37.5 32.3L26.25 25.625V12.5Z" fill="#367588"/>
     </svg>
-    
 }
 export const  Feedback= ()=>{
     return <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,27 +14,27 @@ export const  Feedback= ()=>{
     </svg>
 }
 export const Middle = ()=>{
-    return <svg width="204" height="554" viewBox="0 0 204 554" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return <svg width="204" height="554" viewBox="0 0 204 554" fill="none" xmlns="http://www.w3.org/2000/svg" className="mid">
     <path d="M156.913 420.432C103.958 512.422 25.7046 591.452 -74.9013 533.537C-227.795 545.382 -337.952 231.172 -284.997 139.182C-232.041 47.1925 -116.647 -38.6893 -16.0408 19.2258C84.5651 77.1409 297.614 284.491 156.913 420.432Z" fill="#436E7A"/>
     </svg>
 }
 export const Header = (props:any)=>{
-    return <svg width="1440" height="490" viewBox="0 0 1440 490" fill="none" xmlns="http://www.w3.org/2000/svg" className="svg">
+    return <svg  viewBox="0 0 1440 490" fill="none" xmlns="http://www.w3.org/2000/svg" className="svgs">
     <path d="M0 395.5L60 404.858C120 414.922 240 432.578 360 452C480 471.422 600 489.078 720 489.608C840 489.078 960 471.422 1080 433.108C1200 395.5 1320 339 1380 310.75L1440 282.5V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0V395.5Z" fill="#3F7B8D"/>
     </svg>
 }
 export const Header2 = ()=>{
-    return <svg width="1390" height="517" viewBox="0 0 1390 517" fill="none" xmlns="http://www.w3.org/2000/svg" id="second">
+    return <svg  viewBox="0 0 1390 517" fill="none" xmlns="http://www.w3.org/2000/svg" id="second" >
     <path d="M0 366.608L80.2222 411.674C160.444 456.561 320.889 546.693 481.333 506.635C641.778 466.755 802.222 296.863 962.667 274.509C1123.11 252.155 1283.56 377.338 1363.78 439.93L1444 502.522V0H1363.78C1283.56 0 1123.11 0 962.667 0C802.222 0 641.778 0 481.333 0C320.889 0 160.444 0 80.2222 0H0V366.608Z" fill="#3F7B8D"/>
     </svg>
 }
 export const Fotter = ()=>{
-    return <svg width="335" height="339" viewBox="0 0 335 339" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer">
+    return <svg  viewBox="0 0 335 339" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer">
     <path d="M329.375 179.034C329.375 251.726 305.538 325.37 208.071 325.37C101.777 384.64 -110 235.785 -110 163.093C-110 90.4006 -62.0062 0 35.4613 0C132.929 0 374.814 50.2751 329.375 179.034Z" fill="#436E7A"/>
     </svg>
 } 
 export const Footer2 = ()=>{
-    return <svg width="1440" height="755" viewBox="0 0 1440 755" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return <svg  viewBox="0 0 1440 755" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 36.4201L80 56.744C160 77.2989 320 117.947 480 111.018C640 104.089 800 49.5844 960 23.2557C1120 -2.84201 1280 -0.532448 1360 0.62232L1440 1.77709V754.686H1360C1280 754.686 1120 754.686 960 754.686C800 754.686 640 754.686 480 754.686C320 754.686 160 754.686 80 754.686H0V36.4201Z" fill="#3F7B8D"/>
     </svg>
 }
