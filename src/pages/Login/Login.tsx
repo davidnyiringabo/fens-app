@@ -1,4 +1,5 @@
 import "./login.css";
+<<<<<<< HEAD
 
 import { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -40,6 +41,19 @@ export default function Login() {
     });
   }, []);
 
+=======
+import Field from "../../components/Field/Field";
+import SubmitButton from "../../components/SubmitButton/SubmitButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+
+import Ellipse1 from "./../../assets/first-ellipse.svg";
+import Ellipse2 from "./../../assets/second-ellipse.svg";
+
+import Logo from "../../assets/snof-logo.png";
+
+export default function Login() {
+>>>>>>> 4105f3c (resolve rebase conflicts)
   const emailLabel = "Email";
   const emailType = "email";
   const emailName = "orgEmail";
@@ -54,8 +68,13 @@ export default function Login() {
   return (
     <div className="login">
       <div className="vectors">
+<<<<<<< HEAD
         <img src={Ellipse1} alt="First ellipse" />
         <img src={Ellipse2} alt="Second ellipse" />
+=======
+        <img src={Ellipse1} alt="" />
+        <img src={Ellipse2} alt="" />
+>>>>>>> 4105f3c (resolve rebase conflicts)
       </div>
 
       <div className="logo">
@@ -76,8 +95,12 @@ export default function Login() {
           id={passwdId}
         />
         <div className="password-hide">
+<<<<<<< HEAD
           <FontAwesomeIcon className="password-show-icon active" icon={faEye} />
           <FontAwesomeIcon className="password-hide-icon" icon={faEyeSlash} />
+=======
+          <FontAwesomeIcon icon={faEye} />
+>>>>>>> 4105f3c (resolve rebase conflicts)
         </div>
         <div className="">
           <SubmitButton buttonValue={loginButtonValue} />
