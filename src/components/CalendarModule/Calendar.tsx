@@ -1,6 +1,7 @@
 import { FaArrowDown, FaArrowUp } from "react-icons/fa"
 import { MdOutlineCalendarViewMonth, MdOutlineToday } from "react-icons/md"
 import {HiBookmark} from 'react-icons/hi'
+<<<<<<< HEAD
 import Days from "../Days/Days"
 import Months from "../Months/Months"
 import Years from "../Years/Years"
@@ -53,11 +54,17 @@ export default function CustomCalendar() {
         setYearName(response[3])
     }
 
+=======
+
+import './Calendar.css'
+export default function CustomCalendar() {
+>>>>>>> 9bd905d (resolve rebase conflicts)
     return (
         <div className="calendar--container">
             <div className="calendar--header">
                 <div className="calendar--header--left">
                     <div className="calendar--header--left-icons">
+<<<<<<< HEAD
                         <FaArrowDown onClick={decrementMonths}/>
                         <FaArrowUp onClick={incrementMonths}/>
                     </div>
@@ -86,6 +93,31 @@ export default function CustomCalendar() {
                         <div className="icon">
                             <MdOutlineCalendarViewMonth/>
                             { showYear ? <Years /> : "" }
+=======
+                        <FaArrowDown />
+                        <FaArrowUp />
+                    </div>
+                    <div className="calendar--header--month--year">
+                        February 2023
+                    </div>
+                </div>
+                <div className="calendar--header--right">
+                    <div className="day--holder">
+                        <div className="icon">
+                            <MdOutlineToday />
+                        </div>
+                        <p className="title">Day</p>
+                    </div>
+                    <div className="month--holder">
+                        <div className="icon">
+                            <MdOutlineCalendarViewMonth />
+                        </div>
+                        <p className="title">Month</p>
+                    </div>
+                    <div className="year--holder">
+                        <div className="icon">
+                            <MdOutlineCalendarViewMonth />
+>>>>>>> 9bd905d (resolve rebase conflicts)
                         </div>
                         <p className="title">Year</p>
                     </div>

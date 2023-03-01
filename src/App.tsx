@@ -13,7 +13,6 @@ function App() {
       <Sidebar />
     </>
   )
-
 }
 
 export default App;
