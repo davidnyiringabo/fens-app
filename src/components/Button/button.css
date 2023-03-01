@@ -1,0 +1,12 @@
+:root {
+  --var-dark-color: #436e7a;
+}
+
+.button input[type="submit"] {
+  background-color: var(--var-dark-color);
+  color: #fff;
+  position: relative;
+  width: 100px;
+  height: 72px;
+  border: none;
+}
