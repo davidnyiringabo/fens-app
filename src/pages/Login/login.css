@@ -5,11 +5,17 @@
   --secondary-bg-color: #eee;
 }
 
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .login {
-  margin-top: 0.625rem;
+  margin-top: 5.1875rem;
   display: grid;
   place-items: center;
   width: 100vw;
+  height: 100%;
   max-width: 100vw;
 }
 
@@ -26,38 +32,53 @@ h2 {
   margin: 3rem 0 1.5rem 0;
 }
 
-/* .field input[type="password"]::before {
-  content: url("../../assets/eye-solid.svg");
-  width: 30%;
-  height: 30%;
-  display: inline-block;
-  margin-left: auto;
-} */
+.vectors {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  max-width: auto;
+}
 
+.vectors img:first-of-type {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+.vectors img:not(img:first-of-type) {
+  position: absolute;
+  right: 80%;
+  top: 50%;
+}
+
+/* Password icons */
 .password-hide {
   width: 2.5rem;
   height: 1.6875rem;
 }
 
-.vectors {
+.active {
   position: absolute;
-  z-index: -1;
   width: 100%;
-  max-width: auto;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  height: 100%;
+  bottom: 230%;
+  left: 800%;
+  cursor: pointer;
+  display: block;
 }
 
-.vectors * {
-  position: sticky;
+.password-hide-icon {
+  width: 100%;
+  height: 100%;
+  bottom: 230%;
+  left: 800%;
+  cursor: pointer;
+  display: none;
 }
 
-.vectors img:first-of-type {
-  top: 40%;
-  left: 90%;
-}
-
-.vectors img:not(img:first-of-type) {
-  top: 1000%;
-  right: 80%;
+.password-hide svg:first-of-type {
+  position: relative;
+  bottom: 230%;
+  left: 800%;
 }
