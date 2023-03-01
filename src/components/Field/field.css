@@ -18,15 +18,7 @@
 .text-bold,
 label {
   margin: 0.75rem 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
   font-weight: 700;
-=======
-  font-size: 700;
->>>>>>> 4105f3c (resolve rebase conflicts)
-=======
-  font-weight: 700;
->>>>>>> 87d3aec (resolve rebase conflicts)
 }
 
 .field input {
@@ -39,20 +31,6 @@ label {
   padding: 0.625rem;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .field input::selection {
   border: 1px solid var(--primary-color);
-=======
-.field input[type="password"]::before {
-  content: url("../../assets/eye-solid.svg");
-  width: 30%;
-  height: 30%;
-  display: inline-block;
-  margin-left: auto;
->>>>>>> 4105f3c (resolve rebase conflicts)
-=======
-.field input::selection {
-  border: 1px solid var(--primary-color);
->>>>>>> 87d3aec (resolve rebase conflicts)
 }
