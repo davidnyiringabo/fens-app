@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #436e7a;
+  --bright-color: #fff;
+  --stroke-color: #000;
+  --secondary-bg-color: #eee;
+}
+
+.login {
+  margin-top: 0.625rem;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+h2 {
+  text-transform: capitalize;
+  margin: 3rem 0 1.5rem 0;
+}
+
+/* .field input[type="password"]::before {
+  content: url("../../assets/eye-solid.svg");
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+  margin-left: auto;
+} */
+
+.password-hide {
+  width: 2.5rem;
+  height: 1.6875rem;
+}
+
+.vectors {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.vectors * {
+  position: sticky;
+}
+
+.vectors img:first-of-type {
+  top: 40%;
+  left: 90%;
+}
+
+.vectors img:not(img:first-of-type) {
+  top: 1000%;
+  right: 80%;
+}
