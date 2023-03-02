@@ -34,7 +34,7 @@ export const Fotter = ()=>{
     </svg>
 } 
 export const Footer2 = ()=>{
-    return <svg  viewBox="0 0 1440 755" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return <svg  viewBox="0 0 1440 755" fill="none" xmlns="http://www.w3.org/2000/svg" id="footer2">
     <path d="M0 36.4201L80 56.744C160 77.2989 320 117.947 480 111.018C640 104.089 800 49.5844 960 23.2557C1120 -2.84201 1280 -0.532448 1360 0.62232L1440 1.77709V754.686H1360C1280 754.686 1120 754.686 960 754.686C800 754.686 640 754.686 480 754.686C320 754.686 160 754.686 80 754.686H0V36.4201Z" fill="#3F7B8D"/>
     </svg>
 }

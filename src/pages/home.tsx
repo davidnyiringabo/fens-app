@@ -89,39 +89,41 @@ export const Home = ()=>{
                 </div>
             </div>
         <div className="footer">
-            <div className="s">
-                <Footer2/>
-                <Fotter/>
-            </div>
             <div className="footer-content">
-                <div className="foot-description">
-                    <h2>SNoF Technologies</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea quam.chitecto repellendus commodi? Temporibus fugiat pariatur nisi dignissimos esse.</p>
-                    <div className="social-media">
-                        <FaInstagram/>
-                        <FaFacebookSquare/>
-                        <FaLinkedin/>
+                <div className="s">
+                    <Fotter/>
+                    <Footer2/>
+                </div>
+                <div className="contents">
+                    <div className="foot-description">
+                        <h2>SNoF Technologies</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea quam.chitecto repellendus commodi? Temporibus fugiat pariatur nisi dignissimos esse.</p>
+                        <div className="social-media">
+                            <FaInstagram/>
+                            <FaFacebookSquare/>
+                            <FaLinkedin/>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="weblinks">
+                        <h2>Website Links</h2>
+                        <p>Home</p>
+                        <p>Services</p>
+                        <p>Pricing</p>
+                        <p>Contact</p>
+                        <p>FAQs</p>
+                    </div>
+                    <div className="web-services">
+                        <h2>Services</h2>
+                        <p>Schedule</p>
+                        <p>Notify</p>
+                        <p>Feedback</p>
                     </div>
                 </div>
-                <hr />
-                <div className="weblinks">
-                    <h2>Website Links</h2>
-                    <p>Home</p>
-                    <p>Services</p>
-                    <p>Pricing</p>
-                    <p>Contact</p>
-                    <p>FAQs</p>
-                </div>
-                <div className="web-services">
-                    <h2>Services</h2>
-                    <p>Schedule</p>
-                    <p>Notify</p>
-                    <p>Feedback</p>
-                </div>
-            </div>
-            <div className="copyright">
+                <div className="copyright">
                 <hr />
                 <p>@copyrights SNoF -All right reserved</p>
+            </div>
             </div>
         </div>
     </div>
