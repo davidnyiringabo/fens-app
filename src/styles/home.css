@@ -247,12 +247,14 @@ h2 {
 .s {
   z-index: -2;
   width: 100%;
+  margin-top: 3em;
   position: absolute;
 }
 
 .footer {
   position: relative;
   bottom: 0;
+  margin-top: 2em;
 }
 
 #footer {
@@ -264,18 +266,20 @@ h2 {
 }
 
 .footer-content {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .contents {
-  display: flex;
   position: absolute;
-  top: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   color: white;
   left: 2vw;
-  justify-content: space-around;
+  bottom: -540px;
   line-height: 30px;
-  flex-wrap: wrap;
 }
 
 .foot-description {
@@ -323,19 +327,19 @@ h2 {
   text-align: left;
   flex-grow: 1;
   margin-left: 20px;
+  margin-bottom: 100px;
 }
 
 .web-services {
   flex-grow: 3;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
 .copyright {
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  left: 20px;
-  right: 20px;
+  flex-grow: 5;
+  margin: 50px 150px 0 150px;
 }
 
 /*################################## OTHER*/
