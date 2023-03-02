@@ -119,11 +119,11 @@ export const Home = ()=>{
                         <p>Notify</p>
                         <p>Feedback</p>
                     </div>
-                </div>
-                <div className="copyright">
+                    <div className="copyright">
                 <hr />
                 <p>@copyrights SNoF -All right reserved</p>
             </div>
+                </div>
             </div>
         </div>
     </div>

@@ -226,14 +226,17 @@ h2{
 
 /*########################## FOOTER*/
 
+
 .s{
     z-index: -2;
     width: 100%;
+    margin-top: 3em;
     position: absolute;
 }
 .footer {
     position: relative;
     bottom: 0;
+    margin-top: 2em;
 }
 #footer{
     position: absolute;
@@ -243,17 +246,19 @@ h2{
     left:-25%;
 }
 .footer-content{
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .contents{
-    display: flex;
     position: absolute;
-    top:30vh;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     color: white;
     left: 2vw;
-    justify-content: space-around;
+    bottom: -500px;
     line-height: 30px;
-    flex-wrap: wrap;
   }
   .foot-description{
     display: flex;
@@ -297,30 +302,9 @@ h2{
   }
   .web-services{
      flex-grow: 3;
+     display:flex;
      justify-content: flex-start;
    }
-.copyright{
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    left: 20px;
-    right: 20px;
-}
-/*################################## OTHER*/
-%button{
-    width: 75px;
-    height: 25px;
-    margin: 20px;
-}
-%border{
-    border: 1px solid #367588;
-}
-%card{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
 /*################################## OTHER*/
 @media (max-width:1200px){
     .card{
