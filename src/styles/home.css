@@ -278,7 +278,7 @@ h2 {
   flex-wrap: wrap;
   color: white;
   left: 2vw;
-  bottom: -540px;
+  bottom: -560px;
   line-height: 30px;
 }
 
@@ -370,5 +370,18 @@ h2 {
   }
   .subscription, .service-card {
     flex-wrap: wrap;
+  }
+  .contents {
+    bottom: -550px;
+  }
+  .register {
+    width: 35%;
+  }
+  .register {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  .register .reglink {
+    margin: 0 10px;
   }
 }/*# sourceMappingURL=home.css.map */
