@@ -1,0 +1,47 @@
+.schedule{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.task{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 0.3rem;
+    align-items: center;
+
+}
+.single-task{
+    width: 60%;
+    height: 65%;
+    border: 1px #6d6b6b solid;
+    border-left: 12px #10926E solid;
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    
+}
+
+.taskTime{
+    display: flex;
+    font-size: 12px;
+}
+ h3 hr{
+    transform: rotate(90deg);
+    width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    .task h3{
+       display: none;
+    }
+    .single-task{
+        width: 90%;
+    }
+}

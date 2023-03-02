@@ -6,12 +6,21 @@ import { MdNotifications } from 'react-icons/md'
 import logo from '../../assets/snof-logo.png'
 import profile from '../../assets/profile-pic.png'
 
-export default function Navbar() {
+interface Props {
+    setActivateSideBar: Function,
+    activateSideBar: boolean
+}
+
+ const Navbar:React.FC<Props>=({setActivateSideBar,activateSideBar}) =>{
+    const consol = ()=>{
+        setActivateSideBar(!activateSideBar)
+        console.log("it is clicked")
+    }
     return (
         <div className="nav">
             <div className="nav--left">
                 <span className="search-icon">
-                    <FiMenu size={40}/>
+                    <FiMenu size={40} onClick={consol}/>
                 </span>
                 <img src={logo} alt="logo"/>
             </div>
@@ -34,3 +43,5 @@ export default function Navbar() {
         </div>
     )
 }
+
+export default Navbar

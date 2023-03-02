@@ -1,0 +1,12 @@
+.notification{
+    width: 95%;
+    height: 25%;
+    background: #EEEBEB;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #323131;
+}
