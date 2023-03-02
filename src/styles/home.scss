@@ -252,12 +252,12 @@ h2{
 }
 .contents{
     position: absolute;
-    display: inline-flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     color: white;
     left: 2vw;
-    bottom: -500px;
+    bottom: -540px;
     line-height: 30px;
   }
   .foot-description{
@@ -299,12 +299,34 @@ h2{
    text-align: left;
    flex-grow: 1;
    margin-left: 20px;
+   margin-bottom: 100px;
   }
   .web-services{
      flex-grow: 3;
      display:flex;
+     flex-direction: column;
      justify-content: flex-start;
    }
+   .copyright{
+    flex-grow: 5;
+
+    margin: 50px 150px 0 150px;
+   }
+/*################################## OTHER*/
+%button{
+    width: 75px;
+    height: 25px;
+    margin: 20px;
+}
+%border{
+    border: 1px solid #367588;
+}
+%card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 /*################################## OTHER*/
 @media (max-width:1200px){
     .card{
