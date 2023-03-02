@@ -4,6 +4,7 @@ import Schedules from "./pages/Schedule/Schedule";
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import PlayerV from './components/videos/videoPlayer'
+import Shower from './components/images/imageShower'
 import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
 
@@ -18,11 +19,11 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        {/* <Route path='/' element={<h1>hello world</h1>}/> */}
-        <Route path='/videos' element={<PlayerV/>}/>
+        <Route path='/' element={<Shower/>}/>
+        {/* <Route path='/videos' element={<PlayerV/>}/> */}
       </Routes>
       </div>
-      <PlayerV/>
+      {/* <PlayerV/> */}
     </div>
   )
 }

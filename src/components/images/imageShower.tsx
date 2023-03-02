@@ -1,12 +1,12 @@
 import React from "react";
-import images from './images/ground1.png'
-import Images from './images/dom1.jfif'
-import image from './images/dom2.jfif'
-import imagese from './images/class1.jfif'
-import mages from './images/class2.jfif'
-import mage from './images/class3.jfif'
+import images from './../../assets/images/ground1.png'
+import Images from './../../assets/images/dom1.jfif'
+import image from './../../assets/images/dom2.jfif'
+import imagese from './../../assets/images/class1.jfif'
+import mages from './../../assets/images/class2.jfif'
+import mage from './../../assets/images/class3.jfif'
 
-const Player = ()=>{
+const Shower = ()=>{
     return (
         <div className="App1">
     <form>
@@ -60,4 +60,4 @@ const Player = ()=>{
       );
 }
 
-export default Player;
+export default Shower;
