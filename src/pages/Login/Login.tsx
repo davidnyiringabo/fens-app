@@ -8,9 +8,9 @@ import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import Field from "../../components/Field/Field";
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
 
-import Ellipse1 from "./../../assets/first-ellipse.svg";
-import Ellipse2 from "./../../assets/second-ellipse.svg";
 import Logo from "../../assets/snof-logo.png";
+import { firstEllipse } from "./../../components/Svg/Svg";
+import { secondEllipse } from "./../../components/Svg/Svg";
 
 export default function Login() {
   const ref = useRef(null);
@@ -54,8 +54,8 @@ export default function Login() {
   return (
     <div className="login">
       <div className="vectors">
-        <img src={Ellipse1} alt="First ellipse" />
-        <img src={Ellipse2} alt="Second ellipse" />
+        <img src={firstEllipse} alt="First ellipse" />
+        <img src={secondEllipse} alt="Second ellipse" />
       </div>
 
       <div className="logo">
