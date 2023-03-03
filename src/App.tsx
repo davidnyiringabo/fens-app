@@ -1,17 +1,15 @@
-import './App.css'
-import Schedules from './pages/Schedule/Schedule'
-import Navbar from './components/Navbar/Navbar'
-import Sidebar from './components/Sidebar/Sidebar'
-// import CalendarModule from './CalendarModule/Calendar'
-function App() {
+import RegisterPage from "./pages/Register/RegisterPage";
+import Login from "./pages/Login/Login";
+import Schedules from "./pages/Schedule/Schedule";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
+function App() {
   return (
     <>
-      <Navbar />
-      <Schedules />
-      <Sidebar />
+      <Login />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
