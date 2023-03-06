@@ -1,7 +1,7 @@
-import '../styles/home.css'
+import './home.css'
 import { Link } from 'react-router-dom'
-import { Card ,Card2,Icon} from '../components/card'
-import { Bell, Feedback, Notify,Middle, Header, Header2, Footer2, Fotter } from '../assets/svg'
+import { Card ,Card2,Icon} from '../../components/card'
+import { Bell, Feedback, Notify,Middle, Header, Header2, Footer2, Fotter } from '../../assets/svg'
 import { FaInstagram,FaFacebookF,FaFacebookSquare,FaTwitter,FaDiscord,FaPhoneAlt,FaLinkedin,FaEnvelope,FaArrowUp,FaLinkedinIn,FaMapMarkerAlt } from "react-icons/fa";
 export const Home = ()=>{
     return(
