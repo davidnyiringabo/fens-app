@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+body {
+  background-color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  padding: 10px;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  flex-grow: 0.5;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register {
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  padding: 20px;
+  justify-self: flex-start;
+}
+
+.links a {
+  height: 100%;
+  font-size: 20;
+  padding: 15px;
+}
+
+.contact, .card, .service-card, .subscription, .section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex-direction: column;
+}
+
+.service-card, .subscription {
+  flex-grow: 2;
+  margin: 10px;
+}
+
+.card {
+  flex-direction: column;
+  max-width: 18vw;
+  min-height: 20em;
+  padding: 23px;
+  border: 1px solid black;
+  margin: 0 50px 50px 50px;
+  border-radius: 19px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.service-card h3 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 45;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+.contact {
+  flex-wrap: wrap-reverse;
+}
+
+.contact-info {
+  flex-grow: 1.5;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin: 50px;
+}
+
+.contact-form {
+  margin-right: 150px;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form form {
+  display: flex;
+  position: relative;
+  background-color: royalblue;
+  flex-direction: column;
+  margin: 10px;
+  width: 300px;
+  height: 290px;
+  padding: 35px;
+  border-radius: 30px;
+}
+
+.contact-form form input, .contact-form form textarea {
+  padding: 10px;
+  margin: 20px 10px 0;
+  outline-width: 0;
+}
+
+.contact-form form a {
+  width: 75px;
+  height: 25px;
+  margin: 20px;
+}
+
+.contact-form form a {
+  margin: 40px 20px 0 0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.contact-form form::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  transform: scale(1.12);
+  top: 0;
+  bottom: 0;
+  right: -4%;
+  z-index: -1;
+  left: 15%;
+  background-color: grey;
+}
+
+svg {
+  z-index: -2;
+}
+
+#second {
+  position: absolute;
+  right: 60px;
+  left: 2%;
+  top: 70px;
+  overflow: hidden;
+  transform: scale(0.8);
+  z-index: -4;
+}
+
+.first {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 40px 0;
+  margin-bottom: 50px;
+}
+
+.intro {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.footer {
+  position: relative;
+  height: 80vh;
+  margin: 30px 0 0 0;
+  overflow: hidden;
+}
+
+#footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.middle {
+  position: absolute;
+  bottom: -110%;
+  left: 0%;
+  bottom: -110%;
+  z-index: -7;
+}/*# sourceMappingURL=home.css.map */
