@@ -44,13 +44,13 @@ h2 {
   max-width: auto;
 }
 
-.vectors img:first-of-type {
+.vectors svg:first-of-type {
   position: sticky;
   top: 50%;
   right: 80%;
 }
 
-.vectors img:not(img:first-of-type) {
+.vectors svg:not(svg:first-of-type) {
   position: sticky;
   left: 80%;
   top: 10%;

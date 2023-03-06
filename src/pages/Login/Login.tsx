@@ -9,8 +9,8 @@ import Field from "../../components/Field/Field";
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
 
 import Logo from "../../assets/snof-logo.png";
-import { firstEllipse } from "./../../components/Svg/Svg";
-import { secondEllipse } from "./../../components/Svg/Svg";
+import { FirstEllipse } from "./../../assets/svg";
+import { SecondEllipse } from "./../../assets/svg";
 
 export default function Login() {
   const ref = useRef(null);
@@ -54,8 +54,8 @@ export default function Login() {
   return (
     <div className="login">
       <div className="vectors">
-        <img src={firstEllipse} alt="First ellipse" />
-        <img src={secondEllipse} alt="Second ellipse" />
+        <FirstEllipse />
+        <SecondEllipse />
       </div>
 
       <div className="logo">
