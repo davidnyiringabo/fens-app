@@ -1,20 +1,18 @@
 import '../styles/home.css'
-import reactLogo from '../assets/react.svg'
 import { Link } from 'react-router-dom'
 import header from '../assets/header.svg'
 import header2 from '../assets/header2.svg'
 import footer from '../assets/fotter.svg'
 import footer2 from '../assets/footer2.svg'
-import mid from '../assets/middle.svg'
-import { Card } from '../components/card'
-import { Card2 } from '../components/card'
-
+import { Card ,Card2,Icon} from '../components/card'
+import { Bell, Feedback, Notify,Middle } from '../assets/svg'
+import { FaInstagram,FaFacebookF,FaFacebookSquare,FaTwitter,FaDiscord,FaPhoneAlt,FaLinkedin,FaEnvelope,FaArrowUp,FaLinkedinIn,FaMapMarkerAlt } from "react-icons/fa";
 export const Home = ()=>{
     return(
         <div>
             <div className="top">
                 <div className="logo">
-                    <img src={reactLogo} alt="snof logo" />
+                    <img src='../../public/log.png' alt="snof logo" />
                 </div>
                     <div className="links">
                         <a href="#">Home</a>
@@ -23,8 +21,9 @@ export const Home = ()=>{
                         <a href="#contact">Contact</a>
                     </div>
                     <div className="register">
-                        <Link to='/login'>signup</Link>
-                        <Link to='/signup' >login</Link>
+                        <div className="reglink" id='link1'><Link to='/login'>Sign Up</Link></div>
+                        
+                        <div className="reglink"><Link to='/signup' >Log In</Link></div>
                     </div>
             </div>
             <div className="first">
@@ -40,34 +39,45 @@ export const Home = ()=>{
             <div className="section" id='services'>
                 <h2>Our Services</h2>
                 <div className="service-card">
-                    <Card name = 'Shedule' desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
-                    <Card name = 'Notify' desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
-                    <Card name = 'Feedback' desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
+                    <Card name = 'Shedule' svg = {<Notify/>} desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
+                    <Card name = 'Notify' svg = {<Bell/>} desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
+                    <Card name = 'Feedback' svg = {<Feedback/>} desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos cupiditate non. Temporibus, officia? Maiores aliquam cum exercitationem, eum saepe dolorem quisquam neque ratione esse inventore distinctio culpa reprehenderit. Quae!'/>
                 </div> 
                 <div className="svg middle">
-                 <img src={mid} id='middle' /> 
+                    <Middle/>
                 </div>
-
-                <div className="section" id="pricing">
-                    <h2>Pricing</h2>
-                    <div className="subscription">
-                        <Card2 title='Free' price='$0 per month'  desc='For business just  getting started.' feature0='Shedule' feature1='Shedule' feature2='Shedule' />
-                        <Card2 title='Pro' price='$5 per month'  desc='For business just  getting started.' feature0='Shedule' feature1='Shedule' feature2='Shedule' />
-                        <Card2 title='Ultimate' price='$10 Per month'  desc='For business just  getting started.' feature0='Shedule' feature1='Shedule' feature2='Shedule' />
-                    </div>
+            </div>
+            <div className="section" id="pricing">
+                <h2>Pricing</h2>
+                <div className="subscription">
+                    <Card2 title='Free' price='$0 per month'  desc='For business just  getting started.' feature0='Shedule for event' feature1='Shedule for event' feature2='Shedule for event' />
+                    <Card2 title='Pro' price='$5 per month'  desc='For business just  getting started.' feature0='Shedule for event' feature1='Shedule for event' feature2='Shedule for event' />
+                    <Card2 title='Ultimate' price='$10 Per month'  desc='For business just  getting started.' feature0='Shedule for event' feature1='Shedule for event' feature2='Shedule for event' />
                 </div>
             </div>
             <h2>Contact Us</h2>
             <div className="contact" id="contact">
                 <div className="contact-info">
-                    <div><i></i>
-                    <p>KN Street 256 KIGALI</p>
+                    <div className='location'> 
+                        <div>
+                            <FaMapMarkerAlt/>
+                            <p>KN Street 256 KIGALI</p>
+                        </div>
+                        <div>
+                            <FaPhoneAlt/>
+                            <p>+250783490734</p>
+                        </div>
+                        <div>
+                            <FaEnvelope/>
+                            <p>info@SNoF-Labs.com</p>
+                        </div>
                     </div>
-                    <div><i></i>
-                    <p>KN Street 256 KIGALI</p>
-                    </div>
-                    <div><i></i>
-                    <p>KN Street 256 KIGALI</p>
+                    <div className="social-medial">
+                        <Icon icon = {<FaInstagram/>}/>
+                        <Icon icon = {<FaFacebookF/>}/>
+                        <Icon icon = {<FaTwitter/>}/>
+                        <Icon icon = {<FaLinkedinIn/>}/>
+                        <Icon icon = {<FaDiscord/>}/>
                     </div>
                 </div>
                 <div className="contact-form">
@@ -85,11 +95,38 @@ export const Home = ()=>{
             <div className="s">
                  <img src={footer2}/>
                  <img src={footer} id='footer' /> 
-                </div>
+            </div>
                 <div className="footer-content">
-                    <div className="contact"></div>
-                    <hr/>
-                    <p></p>
+                    <div className="foot-description">
+                        <h2>SNoF Technologies</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea quam.chitecto repellendus commodi? Temporibus fugiat pariatur nisi dignissimos esse.</p>
+                        <div className="social-media">
+                            <FaInstagram/>
+
+                            <FaFacebookSquare/>
+
+                            <FaLinkedin/>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="weblinks">
+                        <h2>Website Links</h2>
+                        <p>Home</p>
+                        <p>Services</p>
+                        <p>Pricing</p>
+                        <p>Contact</p>
+                        <p>FAQs</p>
+                    </div>
+                    <div className="web-services">
+                        <h2>Services</h2>
+                        <p>Schedule</p>
+                        <p>Notify</p>
+                        <p>Feedback</p>
+                    </div>
+                </div>
+                <div className="copyright">
+                    <hr />
+                    <p>@copyrights SNoF -All right reserved</p>
                 </div>
             </div>
         </div>

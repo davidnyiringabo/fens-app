@@ -5,8 +5,63 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.icon, .card, .register .reglink {
+  border: 1px solid #367588;
+}
+
+.contact, .card, .service-card, .subscription, .register {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #367588;
+  color: white;
+  font-weight: bold;
+}
+
+.text li, ul {
+  margin: 10px;
+  list-style: circle;
+}
+
+.logo img {
+  transform: scale(0.7);
+}
+
 a {
   text-decoration: none;
+  color: black;
+}
+
+.register .reglink {
+  background-color: #367588;
+  border-radius: 10px;
+  width: 80px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+
+.reglink a {
+  color: white;
+}
+
+#link1 {
+  background-color: white;
+}
+
+#link1 a {
+  color: #367588;
+}
+
+.register {
+  width: 15%;
 }
 
 .top {
@@ -40,37 +95,36 @@ a {
   padding: 15px;
 }
 
-.contact, .card, .service-card, .subscription, .section {
+.subscription .card {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.section {
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .service-card, .subscription {
   flex-grow: 2;
+  justify-content: center;
   margin: 10px;
 }
 
 .card {
+  background-color: white;
   flex-direction: column;
   max-width: 18vw;
   min-height: 20em;
   padding: 23px;
-  border: 1px solid black;
-  margin: 0 50px 50px 50px;
+  margin: 0 25px 35px 25px;
   border-radius: 19px;
 }
 
 .icon {
   width: 100px;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  border: 1px solid black;
   margin-bottom: 30px;
 }
 
@@ -90,8 +144,9 @@ h2 {
 
 .contact-info {
   flex-grow: 1.5;
-  justify-self: flex-start;
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 50px;
 }
 
@@ -106,7 +161,7 @@ h2 {
 .contact-form form {
   display: flex;
   position: relative;
-  background-color: royalblue;
+  background-color: rgba(54, 117, 136, 0.8784313725);
   flex-direction: column;
   margin: 10px;
   width: 300px;
@@ -145,11 +200,7 @@ h2 {
   right: -4%;
   z-index: -1;
   left: 15%;
-  background-color: grey;
-}
-
-svg {
-  z-index: -2;
+  background-color: #EEEEEE;
 }
 
 #second {
@@ -174,8 +225,19 @@ svg {
 
 .intro {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  left: 30%;
+  margin: 0 auto;
+  color: white;
+}
+
+.intro h1 {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.s {
+  z-index: -2;
+  position: absolute;
 }
 
 .footer {
@@ -187,14 +249,85 @@ svg {
 
 #footer {
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
 }
 
 .middle {
   position: absolute;
+  bottom: -115%;
+  z-index: -2;
+  left: -5%;
   bottom: -110%;
-  left: 0%;
-  bottom: -110%;
-  z-index: -7;
+}
+
+.footer-content {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  color: white;
+  top: 35%;
+}
+
+.foot-description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.social-media {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.location div {
+  display: flex;
+}
+
+.location p {
+  margin: 0px 30px 30px 30px;
+}
+
+.social-medial {
+  width: 45%;
+  padding: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media {
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  margin: 20px 15px;
+}
+
+.weblinks {
+  text-align: left;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.web-services {
+  flex-grow: 3;
+  justify-content: flex-start;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  left: 20px;
+  right: 20px;
 }/*# sourceMappingURL=home.css.map */
