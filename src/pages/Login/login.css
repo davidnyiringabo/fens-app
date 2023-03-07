@@ -9,7 +9,7 @@
   color: var(--primary-color);
 }
 
-* {
+.login {
   overflow-x: hidden;
   overflow-y: hidden;
 }

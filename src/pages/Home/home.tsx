@@ -16,7 +16,7 @@ export const Home = ()=>{
                         <a href="#pricing">Pricing</a>
                         <a href="#contact">Contact</a>
                     </div>
-                    <div className="register">
+                    <div className="register-btns">
                         <div className="reglink" id='link1'><Link to='/login'>Sign Up</Link></div>
                         <div className="reglink"><Link to='/signup' >Log In</Link></div>
                     </div>

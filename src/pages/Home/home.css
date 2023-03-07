@@ -45,7 +45,7 @@ h2 {
   margin: 0 10px;
 }
 
-.register .reglink {
+.register-btns .reglink {
   background-color: #367588;
   border-radius: 10px;
   width: 80px;
@@ -67,7 +67,7 @@ h2 {
   color: #367588;
 }
 
-.register {
+.register-btns {
   width: 15%;
 }
 
@@ -120,7 +120,8 @@ h2 {
 }
 
 /*################################## SERVICES*/
-.service-card, .subscription {
+.service-card,
+.subscription {
   display: flex;
   flex-grow: 2;
   align-items: center;
@@ -167,7 +168,8 @@ h2 {
   justify-content: space-between;
 }
 
-.text li, ul {
+.text li,
+ul {
   margin: 10px;
   list-style-position: inside;
   list-style: circle;
@@ -206,7 +208,8 @@ h2 {
   border-radius: 30px;
 }
 
-.contact-form form input, .contact-form form textarea {
+.contact-form form input,
+.contact-form form textarea {
   padding: 10px;
   margin: 20px 10px 0;
   outline-width: 0;
@@ -230,7 +233,7 @@ h2 {
   right: -4%;
   z-index: -1;
   left: 15%;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .icon {
@@ -349,11 +352,15 @@ h2 {
   margin: 20px;
 }
 
-.register .reglink, .card, .icon {
+.register-btns .reglink,
+.card,
+.icon {
   border: 1px solid #367588;
 }
 
-.register, .card, .contact {
+.register-btns,
+.card,
+.contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -368,20 +375,21 @@ h2 {
     width: 300px;
     flex-wrap: wrap;
   }
-  .subscription, .service-card {
+  .subscription,
+  .service-card {
     flex-wrap: wrap;
   }
   .contents {
     bottom: -550px;
   }
-  .register {
+  .register-btns {
     width: 35%;
   }
-  .register {
+  .register-btns {
     justify-content: flex-end;
     padding-right: 10px;
   }
-  .register .reglink {
+  .register-btns .reglink {
     margin: 0 10px;
   }
-}/*# sourceMappingURL=home.css.map */
+}
