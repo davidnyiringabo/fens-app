@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 body {
   background-color: white;
-  text-align: center;
   font-family: "Inter", sans-serif;
   font-size: large;
+}
+
+.home {
+  text-align: center;
 }
 
 a {
@@ -26,7 +29,7 @@ h2 {
   transform: scale(0.55);
 }
 
-.logo {
+.home .logo {
   display: flex;
   padding: 20px;
   justify-self: flex-start;
