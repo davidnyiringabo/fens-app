@@ -6,10 +6,17 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
+<<<<<<< HEAD
     <>
       <Login />
     </>
   );
+=======
+    <div className="App">
+      
+    </div>
+  )
+>>>>>>> 4f11b2e (start)
 }
 
 export default App;
