@@ -32,27 +32,27 @@ const Shower = ()=>{
     <div className="images">
       <div>
       <img src={images}/>
-      <p>place: Play ground <br/>taken:22/02/2023 16:00 PM</p>
+      <p id="p">place: Play ground <br/>taken:22/02/2023 16:00 PM</p>
       </div>
       <div>
       <img src={Images}/>
-      <p>place: Domitory<br/>taken:22/02/2023 16:00 PM</p>
+      <p id="p">place: Domitory<br/>taken:22/02/2023 16:00 PM</p>
       </div>
       <div>
       <img src={image}/>
-      <p>place: Domitory <br/>taken:22/02/2023 16:00 PM</p>
+      <p id="p">place: Domitory <br/>taken:22/02/2023 16:00 PM</p>
       </div>
       <div>
       <img src={imagese}/>
-      <p>place: Class A <br/>taken:22/02/2023 17:00 PM</p>
+      <p id="p">place: Class A <br/>taken:22/02/2023 17:00 PM</p>
       </div>
       <div>
       <img src={mages}/>
-      <p>place: Class B<br/>taken:22/02/2023 17:00 PM</p>
+      <p id="p">place: Class B<br/>taken:22/02/2023 17:00 PM</p>
       </div>
       <div>
       <img src={mage}/>
-      <p>place: Class C <br/>taken:22/02/2023 17:00 PM</p>
+      <p id="p">place: Class C <br/>taken:22/02/2023 17:00 PM</p>
       </div>
       </div>
       <a href="#" className="a1">load more...</a>

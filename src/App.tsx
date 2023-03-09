@@ -7,7 +7,7 @@ import Shower from './components/images/imageShower'
 import {Routes,Route,Link} from 'react-router-dom'
 import './App.css'
 import Dashboard from './components/dashboard/dashboard'
-// import Sidebar from './components/Sidebar/sidebar'
+import Sidebar from './components/Sidebar/side'
 
 function App() {
   return (

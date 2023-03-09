@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+
 .showed{
   float: right;
   margin-right: 4em;
@@ -15,12 +16,16 @@
   margin-left: 1.5em;
 }
 p{
+  font-size: 1em;
   color: rgb(255, 250, 245);
+}
+#p{
+  font-size: 15px;
 }
 body{
   background-color: #2e3d42;
   opacity: 100%;
-  height: 55em;
+  height: 45em;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -41,7 +46,7 @@ grid-template-rows: 1fr 1fr;
 .images img{
   border-radius: 8px;
   border: 2 solid blue;
-  width: 270px;
+  width: 12.5em;
   height: 220px;
 }
 
@@ -59,6 +64,7 @@ li{
     color: white;
     font-family: snof;
     color: white;
+    margin-top: 2em;
   }
   .li3{
     font-family: snof;
@@ -77,10 +83,11 @@ li{
   }
   .videos div{
     border-radius: 10px 10px;
+   padding-left: 1em;
     }
     video{
       border-radius: 10px 10px; 
-      width: 22em;
+      width: 17em;
       height: 15em;
     }
 form{
@@ -104,7 +111,14 @@ margin-top: 1em;
   position: absolute;
 margin-top: 1em;
   margin-left: 8.5em;
+  margin-left: 8.7em;
 }
+.li2:hover{
+color:white;
+}
+.li1:hover{
+  color:white;
+  }
   @font-face {
     font-family: snof;
     src: url(CELTG___.TTF);
