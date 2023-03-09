@@ -18,7 +18,7 @@ const Shower = ()=>{
     <option>classB</option>
     <option>classC</option>
       </select>
-      <div className="showed">
+      <div className="showed1">
       Show:<select name="images">
     <option>6</option>
     <option>1</option>
@@ -43,7 +43,7 @@ const Shower = ()=>{
       <p>place: Domitory <br/>taken:22/02/2023 16:00 PM</p>
       </div>
       <div>
-      <img src={imagese} height={220}/>
+      <img src={imagese}/>
       <p>place: Class A <br/>taken:22/02/2023 17:00 PM</p>
       </div>
       <div>
@@ -55,7 +55,7 @@ const Shower = ()=>{
       <p>place: Class C <br/>taken:22/02/2023 17:00 PM</p>
       </div>
       </div>
-      <a href="#" className="li3">load more</a>
+      <a href="#" className="a1">load more...</a>
     </div>
       );
 }

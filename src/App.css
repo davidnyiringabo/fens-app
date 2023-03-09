@@ -14,9 +14,20 @@
   top: 0;
   margin-left: 1.5em;
 }
+p{
+  color: rgb(255, 250, 245);
+}
+body{
+  background-color: #2e3d42;
+  opacity: 100%;
+  height: 55em;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 .App1 {
 margin-left: 11em;
-position: absolute;
+position:absolute;
 top: 0;
 margin-top: 5em;
 }
@@ -36,6 +47,7 @@ grid-template-rows: 1fr 1fr;
 
 li{
   list-style: none;
+  margin-top: 1.5em;
 }
  
    a{
@@ -43,32 +55,36 @@ li{
     margin-right: 2em;
   }
   .a1{
-    margin-right: 10em;
+    margin-right: 0.5em;
+    color: white;
+    font-family: snof;
+    color: white;
+  }
+  .li3{
+    font-family: snof;
   }
   .showed1{
     float: right;
-    margin-right: 6em;
+    margin-right: 2em;
   }
   .videos{
-    margin-top: 2em;
     margin-left: 2em;
   display: grid;
   grid-template-columns:1fr 1fr ;
   grid-template-rows: 1fr 1fr;
-    grid-gap: 2;
+  grid-gap: 20px;
+
   }
   .videos div{
-    padding-left: 1em;
-    border-radius: 10px;
-    width: 30em;
-    border: 2 solid blue;
+    border-radius: 10px 10px;
     }
     video{
       border-radius: 10px 10px; 
-      width: 25em;
+      width: 22em;
+      height: 15em;
     }
 form{
-  margin-top: 2em;
+  margin-top: 3em;
   margin-left: 3em;
 }
 .li1{
@@ -76,8 +92,8 @@ form{
   text-decoration: none;
   float: left;
   font-size: 2em;
-position: absolute;
-margin-top: 1.4em;
+position:absolute;
+margin-top: 1em;
   margin-left: 5em;
 }
 .li2{
@@ -86,7 +102,11 @@ margin-top: 1.4em;
   float: left;
   font-size: 2em;
   position: absolute;
-margin-top: 1.5em;
+margin-top: 1em;
   margin-left: 8.5em;
 }
-  
+  @font-face {
+    font-family: snof;
+    src: url(CELTG___.TTF);
+
+  }
