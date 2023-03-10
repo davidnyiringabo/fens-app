@@ -39,10 +39,10 @@ export const Home = () => {
         </div>
         <div className="register-btns">
           <div className="reglink" id="link1">
-            <Link to="/login">Sign Up</Link>
+            <Link to="/signup">Sign Up</Link>
           </div>
           <div className="reglink">
-            <Link to="/signup">Log In</Link>
+            <Link to="/login">Log In</Link>
           </div>
         </div>
       </div>

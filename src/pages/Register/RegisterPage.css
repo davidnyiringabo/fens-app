@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
 :root {
   --primary-color: #436e7a;
   --bright-color: #fff;
   --stroke-color: #000;
   --secondary-bg-color: #eee;
+  --medium-font-weight: 500;
+  overflow-x: hidden;
 }
 
 .register {
   font-family: "Inter", sans-serif;
   margin-top: 0.625rem;
   display: grid;
-  grid-template-rows: repeat(3fr, 1);
   place-items: center;
 }
 
@@ -30,26 +32,13 @@ h2 {
   margin: 1.5rem;
 }
 
-.register .svgs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-}
-.register .svgs:first-child {
-  margin-right: 50%;
-}
-
-.register .svgs:nth-child(2) {
-  margin-left: 50%;
-}
-
 /* Progress bar */
 .progress-bar {
   position: relative;
   display: flex;
   justify-content: space-between;
   counter-reset: step;
-  margin: 3rem 0;
+  margin: 3rem 0 4rem;
 }
 
 .progress-bar::before,
@@ -71,10 +60,6 @@ h2 {
   transition: 0.3s;
 }
 
-.endedStep {
-  background-color: var(--primary-color);
-}
-
 .progress-step {
   width: 2.1275rem;
   height: 2.1275rem;
@@ -90,7 +75,7 @@ h2 {
 
 .progress-step-active {
   background-color: var(--secondary-bg-color);
-  border: 2px solid var(--primary-color);
+  border: 4px solid var(--primary-color);
 }
 
 .progress-step::before {
@@ -101,10 +86,30 @@ h2 {
 .progress-step::after {
   content: attr(data-title);
   position: absolute;
-  top: 2rem;
-  font-size: 0.625rem;
+  top: calc(100% * 1.2);
+  font-size: 0.875rem;
+  font-weight: var(--medium-font-weight);
+  width: 40%;
+  display: grid;
+  place-items: center;
 }
 
+.complete {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--bright-color);
+}
+
+.complete::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% * 1.2);
+  font-size: 0.875rem;
+  font-weight: var(--medium-font-weight);
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
 /* Form */
 .text-center {
   text-align: center;
@@ -144,6 +149,24 @@ h2 {
   display: block;
 }
 
+/* Vectors */
+.register > .vectors {
+  z-index: -1;
+  width: 100%;
+  max-width: auto;
+}
+
+.register > .vectors svg:first-of-type {
+  position: absolute;
+  top: 45%;
+}
+
+.register > .vectors svg:not(svg:first-of-type) {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
 @keyframes animate {
   from {
     transform: scale(1, 0);
@@ -165,15 +188,16 @@ h2 {
   display: block;
 }
 
-.password-hide .password-show-icon,
-.active,
-.password-hide-icon {
+.register .password-hide .password-show-icon,
+.register .active,
+.register .password-hide-icon {
   width: 2.5rem;
   height: 1.6875rem;
   position: absolute;
-  bottom: 26.5%;
+  bottom: 23.5%;
   left: 60%;
   cursor: pointer;
+  z-index: 999;
 }
 
 .password-hide-icon {

@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
 import { Home } from "./pages/Home/home";
-import AAA from "./pages/Login/Login";
+import Login from "./pages/Login/Login";
 import RegisterPage from "./pages/Register/RegisterPage";
 import "./App.css";
 
@@ -11,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<AAA />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<RegisterPage />} />
       </Routes>
     </Router>

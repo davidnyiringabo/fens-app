@@ -6,11 +6,9 @@ import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
 import Field from "../../components/Field/Field";
-
+import { FirstEllipse } from "./../../assets/svg";
+import { SecondEllipse } from "./../../assets/svg";
 import Logo from "./../../assets/snof-logo.png";
-import Ellipse1 from "./../../assets/first-ellipse.svg";
-import Ellipse2 from "./../../assets/second-ellipse.svg";
-
 import "./RegisterPage.css";
 
 export default function RegisterPage() {
@@ -55,6 +53,12 @@ export default function RegisterPage() {
         updateFormSteps(formSteps, formStepsNum);
         updateProgressBar(progressSteps, formStepsNum);
       });
+      const progressActive = document.querySelectorAll(".progress-step-active");
+      console.log(progressActive);
+
+      progress.style.width =
+        ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+      progress.style.backgroundColor = "rgb(67, 110, 122)";
     });
 
     prevBtns.forEach((btn) => {
@@ -64,19 +68,12 @@ export default function RegisterPage() {
         updateProgressBar(progressSteps, formStepsNum);
       });
     });
-
-    const progressActive = document.querySelectorAll(".progress-step-active");
-    console.log(progressActive);
-
-    progress.style.width =
-      ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
   }, []);
 
   function updateFormSteps(formSteps: any, formStepsNum: any) {
     formSteps.forEach((formStep: any) => {
       formStep.classList.contains("form-step-active") &&
-        formStep.classList.remove("form-step-active") &&
-        formStep.classList.add("endedStep");
+        formStep.classList.remove("form-step-active");
     });
 
     formSteps[formStepsNum].classList.add("form-step-active");
@@ -116,6 +113,10 @@ export default function RegisterPage() {
 
   return (
     <div className="register">
+      <div className="vectors">
+        <FirstEllipse />
+        <SecondEllipse />
+      </div>
       <div className="logo">
         <img src={Logo} alt="SNoF-logo" />
       </div>
@@ -135,7 +136,7 @@ export default function RegisterPage() {
         {/* Steps */}
         <div className="form-step form-step-active">
           <Field labelName={orgLabel} type={type} name={orgName} id={id} />
-          
+
           <div className="">
             <a href="#" className="btn btn-next width-50 ml-auto">
               Next
