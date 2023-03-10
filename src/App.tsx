@@ -1,14 +1,20 @@
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import reactLogo from "./assets/react.svg";
+import { Home } from "./pages/Home/home";
+import AAA from "./pages/Login/Login";
 import RegisterPage from "./pages/Register/RegisterPage";
-import Login from "./pages/Login/Login";
-import Schedules from "./pages/Schedule/Schedule";
-import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <Login />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<AAA />} />
+        <Route path="/signup" element={<RegisterPage />} />
+      </Routes>
+    </Router>
   );
 }
 

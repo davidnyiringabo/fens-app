@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 :root {
   --primary-color: #436e7a;
   --bright-color: #fff;
@@ -6,8 +7,10 @@
 }
 
 .register {
+  font-family: "Inter", sans-serif;
   margin-top: 0.625rem;
   display: grid;
+  grid-template-rows: repeat(3fr, 1);
   place-items: center;
 }
 
@@ -27,16 +30,16 @@ h2 {
   margin: 1.5rem;
 }
 
-.svgs {
-  position: grid;
+.register .svgs {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
 }
-.svgs:first-child {
+.register .svgs:first-child {
   margin-right: 50%;
 }
 
-.svgs:nth-child(2) {
+.register .svgs:nth-child(2) {
   margin-left: 50%;
 }
 
