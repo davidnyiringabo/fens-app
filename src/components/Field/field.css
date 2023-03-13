@@ -1,0 +1,36 @@
+:root {
+  --var-dark-color: #436e7a;
+  --background-color: #fff;
+  --stroke-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-bold,
+label {
+  margin: 0.75rem 0;
+  font-weight: 700;
+}
+
+.field input {
+  height: 3.125rem;
+  width: 23.0625rem;
+  border: 1px solid var(--stroke-color);
+  background-color: var(--background-color);
+  border-radius: 0.625rem;
+  margin: 1.5rem 0 1.5rem 0;
+  padding: 0.625rem;
+}
+
+.field input::selection {
+  border: 1px solid var(--primary-color);
+}

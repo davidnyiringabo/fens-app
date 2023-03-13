@@ -1,20 +1,20 @@
-import './App.css'
-import Schedules from './pages/Schedule/Schedule'
-import Navbar from './components/Navbar/Navbar'
-import Sidebar from './components/Sidebar/Sidebar'
-import Sample from './pages/Sample'
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home/home";
+import Login from "./pages/Login/Login";
+import RegisterPage from "./pages/Register/RegisterPage";
+import "./App.css";
 
-// import CalendarModule from './CalendarModule/Calendar'
 function App() {
-
   return (
-    <>
-      {/* <Navbar />
-      <Schedules />
-      <Sidebar /> */}
-      <Sample />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<RegisterPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

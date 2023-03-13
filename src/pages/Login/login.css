@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #436e7a;
+  --bright-color: #fff;
+  --stroke-color: #000;
+  --secondary-bg-color: #eee;
+}
+
+::selection {
+  color: var(--primary-color);
+}
+
+.login * {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.login {
+  margin-top: 5.1875rem;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+h2 {
+  text-transform: capitalize;
+  margin: 3rem 0 1.5rem 0;
+}
+
+/* Vectors */
+.login > .vectors {
+  z-index: -1;
+  width: 100%;
+  max-width: auto;
+}
+
+.login > .vectors svg:first-of-type {
+  position: absolute;
+  top: 45%;
+}
+
+.login > .vectors svg:not(svg:first-of-type) {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+/* Password icons */
+.password-hide {
+  width: 2.5rem;
+  height: 1.6875rem;
+}
+
+.active {
+  display: block;
+}
+
+.login .password-hide .password-show-icon,
+.login .active,
+.login .password-hide-icon {
+  width: 2.5rem;
+  height: 1.6875rem;
+  position: absolute;
+  left: 60.5%;
+  bottom: 30.5%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.password-hide-icon {
+  display: none;
+}
