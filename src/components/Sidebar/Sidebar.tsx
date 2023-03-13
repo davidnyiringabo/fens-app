@@ -5,9 +5,15 @@ import { MdHomeFilled ,MdOutlineHelpOutline, MdOutlineLogout } from 'react-icons
 import { VscFeedback } from 'react-icons/vsc'
 import { IoMdSettings } from 'react-icons/io'
 
-export default function Sidebar() {
+interface Props {
+    activateSideBar: boolean
+}
+const Sidebar:React.FC<Props>=({activateSideBar})=> {
+    
     return (
-        <div className='container'>
+        <>
+            { activateSideBar && <div className='container'>
+
             <div className="container--upper">
                 <div className="link-container active">
                     <div className="link-item">
@@ -74,7 +80,13 @@ export default function Sidebar() {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>}
+            
+        </>
+        
+       
     )
 }
+
+export default Sidebar
 
