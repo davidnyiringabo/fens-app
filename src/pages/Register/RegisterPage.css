@@ -194,16 +194,8 @@ h2 {
   width: 2.5rem;
   height: 1.6875rem;
   position: absolute;
-<<<<<<< HEAD
-  bottom: 23.5%;
-=======
-<<<<<<< HEAD
-  bottom: 26.5%;
-=======
-  bottom: 23%;
->>>>>>> b2ceab1 (password icons working)
->>>>>>> b3cb1dc (resolve rebase conflicts)
-  left: 60%;
+  bottom: 24%;
+  left: 60.5%;
   cursor: pointer;
   z-index: 999;
 }
@@ -211,7 +203,3 @@ h2 {
 .password-hide-icon {
   display: none;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> b2ceab1 (password icons working)
