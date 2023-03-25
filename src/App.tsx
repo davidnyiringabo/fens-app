@@ -4,6 +4,7 @@ import { Home } from "./pages/Home/home";
 import Login from "./pages/Login/Login";
 import RegisterPage from "./pages/Register/RegisterPage";
 import "./App.css";
+import Sample from "./pages/Sample";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<RegisterPage />} />
+        <Route path="/dashboard" element={<Sample />} />
       </Routes>
     </Router>
   );
