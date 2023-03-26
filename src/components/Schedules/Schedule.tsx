@@ -1,7 +1,7 @@
 import React from "react";
 import "./schedule.css"
 import moreDots from "../../assets/three-dots.svg"
-import Modal from "../../Modals";
+import Modal from "../Modal/Modals";
 
 
 type NewType = string;
