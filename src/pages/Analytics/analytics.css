@@ -1,0 +1,144 @@
+.analytics-page-container{
+    width: 85%;
+    height: 123vh;
+    margin-top: 10vh;
+    padding-left: 2%;
+}
+.container--upper{
+    height: 109vh;
+    background: #367588;
+}
+.header-choose-time{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: end;
+}
+.select-time-frame{
+    width: 50%;
+    height: 70%;
+    color:#000;
+    background-color: #96939391;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.boxes-container{
+    width: 90%;
+    height: 18%;
+
+    display: flex;
+    gap: 2%;
+    margin-top: 0.4%;
+}
+
+.analy-box{
+    width: 23%;
+    height: 100%;
+
+    border-radius: 10px;
+    background-color: #4FA4C8;
+    color: #fff;
+    text-align: center;
+}
+.analy-box h1{
+    color: #000;
+}
+.analy-box h2{
+    font-size: 20px;
+}
+.charts-container{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    margin-top: 2%;
+    gap: 5%;
+}
+
+.chat-left{
+    width: 50%;
+    height: 100%;
+    background: #367588;
+    border-radius: 13px;
+}
+.chat-right{
+    width: 40%;
+    height: 100%;
+    background: #D9D9D9;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+
+}
+.bottom-container{
+    width: 100%;
+    height: 35%;
+    background: #fff;
+    padding-top: 1%;
+    display: flex;
+}
+
+.bottom-container-right{
+    width: 38%;
+    height: 100%;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+.bottom-container-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.header-schedule{
+    display: flex;
+    width: 100%;
+    gap: 11%;
+    font-size: 13px;
+}
+.analytics-schedule-container{
+    width: 99%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+.completed-task{
+    width: 100%;
+    gap: 8%;
+    display: flex;
+    margin-bottom: 2%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.contained{
+    width: 23%;
+}
+.bottom-container-right h3{
+  color: #367588;
+  padding: 3% 5% 3%;
+}
+.ratings-boxes-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+.rating-box{
+    width: 90%;
+    height: 20%;
+    border: 1px solid #878484;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
