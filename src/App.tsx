@@ -5,6 +5,7 @@ import Login from "./pages/Login/Login";
 import RegisterPage from "./pages/Register/RegisterPage";
 import Sample from "./pages/Sample";
 import "./App.css";
+import Sample from "./pages/Sample";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<RegisterPage />} />
+        <Route path="/signup" element={<RegisterPage/>}/>
         <Route path="/dashboard" element={<Sample/>}/>
+        <Route path="/dashboard" element={<Sample/>} />
       </Routes>
     </Router>
   );
