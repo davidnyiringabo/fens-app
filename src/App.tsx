@@ -5,12 +5,18 @@ import Login from "./pages/Login/Login";
 import RegisterPage from "./pages/Register/RegisterPage";
 import Sample from "./pages/Sample";
 import "./App.css";
-import Sample from "./pages/Sample";
 import Analytics from "./pages/Analytics/analytics";
 
 function App() {
 
-  const [tasks,setTasks] = useState([
+  interface Task {
+    id: number;
+    text: string;
+    time: string;
+    duration: string;
+  }
+
+  const [tasks,setTasks] = useState<Task[]>([
     {
          id: 0,
          text:'Board meeting',
@@ -30,6 +36,8 @@ function App() {
     duration:'10:20PM to 11:00PM'
 }
 ])
+
+
   return (
     <Router>
       <Routes>
@@ -39,6 +47,9 @@ function App() {
         <Route path="/dashboard" element={<Sample/>} />
         <Route path="/analytics" element={<Analytics tasks={tasks}/>}/>
         <Route path="/dashboard" element={<Sample/>}/>
+        <Route path="/signup" element={<RegisterPage/>}/>
+        <Route path="/dashboard" element={<Sample/>}/>
+        <Route path="/dashboard" element={<Sample/>} />
       </Routes>
     </Router>
   );

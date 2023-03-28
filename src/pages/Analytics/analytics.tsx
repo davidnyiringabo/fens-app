@@ -9,9 +9,7 @@ import Linechart from "./Line"
 import DoughnutChat from './Doughnut'
 
 interface Props{
-    setActivateSideBar:Function,
-    activateSideBar: boolean,
-    tasks: task
+    tasks: object[]
 
 }
 
@@ -21,6 +19,10 @@ interface task{
     time: string,
     duration: string
 }
+
+
+
+
 const Analytics : React.FC<Props>= ({tasks})=> {
 const [activateSideBar,setActivateSideBar] = useState(true)
 
@@ -77,7 +79,7 @@ const [activateSideBar,setActivateSideBar] = useState(true)
                                     <h2>Status</h2>
 
                                 </div>
-                                {tasks.map((task)=>{
+                                {tasks.map((task:any)=>{
                                     return(
                                         <div className='completed-task'>
                                             <div className='contained'>
