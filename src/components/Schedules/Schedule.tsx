@@ -24,7 +24,7 @@ const Schedule:React.FC<Props> = ({tasks})=>{
             < div className="task">
                 <h3 className="taskTime">{tasks.time}  <hr /></h3>
                 <div className="single-task" style={{display:'block'}}>
-                <h4 style={{display:'flex',justifyContent:'space-evenly'}}>{tasks.task} </h4>
+                <h4 style={{display:'flex',justifyContent:'space-evenly'}}>{tasks.task}</h4>
                 <h6 style={{textAlign:'center'}}>{tasks.duration}</h6>
                 </div>
                 < Modal />
