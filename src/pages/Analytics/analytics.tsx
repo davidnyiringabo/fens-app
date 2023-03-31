@@ -27,10 +27,6 @@ const Analytics : React.FC<Props>= ({tasks})=> {
 const [activateSideBar,setActivateSideBar] = useState(true)
 
     return (
-        <div className='overall-container'>
-            <Navbar setActivateSideBar={setActivateSideBar} activateSideBar={activateSideBar}/>
-            <div className='section-container row'>
-                <Sidebar activateSideBar={activateSideBar}/>
                 <div className='analytics-page-container'>
                     <div className='header-choose-time'>
                         <select name="choose-time" className='select-time-frame'>
@@ -152,10 +148,6 @@ const [activateSideBar,setActivateSideBar] = useState(true)
                         </div>
                     </div>
             </div>
-           
-
-        </div>
-        </div>
     )
 }
 

@@ -1,12 +1,12 @@
 
 
 main{
-    width: 90vw;
+    width: 100%;
     background: #EAEAEA;
     margin-top: 4rem;
     position: relative;
     padding-top: 2rem;
-    height: 135vh;
+    height: 100%;
 }
 .coverwidth{
     width: 100vw;
