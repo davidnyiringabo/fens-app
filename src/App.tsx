@@ -5,17 +5,66 @@ import Login from "./pages/Login/Login";
 import RegisterPage from "./pages/Register/RegisterPage";
 import Sample from "./pages/Sample";
 import "./App.css";
-import Sample from "./pages/Sample";
+import Analytics from "./pages/Analytics/analytics";
+import DashBoard from "./pages/DashBoard";
+import Schedule from "./pages/Schedule/Schedule";
+import FeedbackPage from "./pages/feedback";
+import Settings from "./pages/Settings";
+import Help from "./pages/Help";
+import Logout from "./pages/Logout";
 
 function App() {
+
+  interface Task {
+    id: number;
+    text: string;
+    time: string;
+    duration: string;
+  }
+
+  const [tasks,setTasks] = useState<Task[]>([
+    {
+         id: 0,
+         text:'Board meeting',
+         time:'10:20PM',
+         duration:'10:20PM to 11:00PM'
+    },
+    {
+        id: 1,
+        text:'taking lunch',
+        time:'10:20PM',
+        duration:'10:20PM to 11:00PM'
+   },
+   {
+    id: 2,
+    text:'Interviewing other members',
+    time:'10:20PM',
+    duration:'10:20PM to 11:00PM'
+}
+])
+
+const singleTask =   {
+  text:'Board meeting',
+  time:'10:20PM',
+  duration:'10:20PM to 11:00PM'
+}
+
+const [activateSideBar,setActivateSideBar] = useState(true)
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<RegisterPage/>}/>
-        <Route path="/dashboard" element={<Sample/>}/>
-        <Route path="/dashboard" element={<Sample/>} />
+        <Route path="/signup" element={<RegisterPage />} />
+        <Route path="/dashboard" element={<Sample><DashBoard username='Mubaraka Sh.' activateSideBar={activateSideBar}/></Sample>}/>
+        <Route path="/analytics" element={<Sample><Analytics tasks={tasks}/></Sample>}/>
+        <Route path="/schedule" element={<Sample><Schedule tasks={singleTask}/></Sample>}/>
+        <Route path="/feedback" element={<Sample><FeedbackPage/></Sample>} />
+        <Route path="/help" element={<Sample><Help/></Sample>} />
+        <Route path="/settings" element={<Sample><Settings/></Sample>} />
+        <Route path="/logout" element={<Sample><Logout/></Sample>} />
+
       </Routes>
     </Router>
   );

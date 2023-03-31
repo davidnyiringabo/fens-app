@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import Navbar from '../components/Navbar/Navbar'
+import "./sample.css"
 import Sidebar from '../components/Sidebar/Sidebar'
 import DashBoard from './DashBoard'
 import { BrowserRouter, Route } from 'react-router-dom'
@@ -7,9 +8,10 @@ import Analytics from './analytics'
 
 interface Props{
     setActivateSideBar:Function,
-    activateSideBar: boolean
+    activateSideBar: boolean,
+    children: ReactNode
 }
-export default function Sample () {
+export default function Sample ({children}) {
 const [activateSideBar,setActivateSideBar] = useState(true)
 
 
@@ -19,7 +21,7 @@ const [activateSideBar,setActivateSideBar] = useState(true)
             <Navbar setActivateSideBar={setActivateSideBar} activateSideBar={activateSideBar}/>
             <div className='section-container row'>
             <Sidebar activateSideBar={activateSideBar}/>
-            <DashBoard username='Mubaraka Sh.' activateSideBar={activateSideBar}/>
+            {children}
             </div>
            
 

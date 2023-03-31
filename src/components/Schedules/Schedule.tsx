@@ -7,9 +7,9 @@ import Modal from "../../Modals";
 type NewType = string;
 
 interface Props{
-    tasks: tasks
+    tasks: task
 }
-interface tasks{
+interface task{
     time: string,
     task:string,
     duration:string

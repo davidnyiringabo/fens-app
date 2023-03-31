@@ -1,6 +1,5 @@
 
 import React from "react";
-import propTypes, { any } from "prop-types"
 import schedulecomp from "../assets/image3.png"
 import addIcon from "../assets/plus-circle1.png"
 import deleteIcon from "../assets/x-circle1.png"
@@ -36,13 +35,6 @@ const  members=[
 
 interface Props{
     username: string
-    Calender: Function,
-    tasks: object[],
-    firstTasks: object[],
-    completed:object[],
-    time: string,
-    organisations: string[],
-    organsm: object,
     activateSideBar: boolean
     
 }
@@ -141,21 +133,21 @@ const deleteNotifications = ()=>{
     })
 }
 
-// --------------------------HANDLING FORM SUBMIT----------------------------------------------
+// --------------------------HANDLING ADD SCHEDULE FORM SUBMIT----------------------------------------------
 
 const handleFormSubmit = ()=>{
 
 }
-// ----------------------------------------------------------------    
+// -----------------------------------------------------------------------------------------------------------   
 
     return(
-        <main className={ !activateSideBar ? 'coverwidth' : ''} >
+        <main className={ !activateSideBar ? 'coverwidth' : ''}>
             <div className={"container-hero" + `${ activateSideBar? ' coverhero' : ''}`}>
                 {/* --------for the left content */}
 
             
                 
-                <div className="container-left">
+                <div className="container-left" id="f">
                    <div className="welcome-container">
                     <h4>Welcome back {username}</h4>
                    </div>
