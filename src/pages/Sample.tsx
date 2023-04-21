@@ -8,7 +8,7 @@ interface Props{
     activateSideBar: boolean,
     children: ReactNode
 }
-export default function Sample ({children}) {
+export default function Sample ({children}: {children: any}) {
 const [activateSideBar,setActivateSideBar] = useState(true)
 
 
