@@ -1,6 +1,6 @@
 import ScheduleList from "../../components/SchedulesList/ScheduleList";
-import Calendar from "../../components/CalendarModule/Calendar"
-// import './Schedule.css'
+import Calendar from "../../components/Calendar/Calendar"
+import './Schedule.css'
 
 export default function Schedules () {
     return (

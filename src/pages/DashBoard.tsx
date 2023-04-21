@@ -290,7 +290,6 @@ const handleFormSubmit = ()=>{
 
                    </div>
 
-
                 </div>
                 {/* ---------------------for the right content  */}
                 <div className="container-right">
