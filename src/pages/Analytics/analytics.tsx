@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
-import Sidebar from '../../components/Sidebar/Sidebar'
+import Sidebar from '../../components/Sidebar/side'
 import "./analytics.css"
 import dotImg from "/dot.png"
 import progressBarImg from "/progressbar.png"
