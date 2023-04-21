@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import "./sample.css"
-import Sidebar from '../components/Sidebar/Sidebar'
+import Sidebar from '../components/Sidebar/side'
 
 interface Props{
     setActivateSideBar:Function,
