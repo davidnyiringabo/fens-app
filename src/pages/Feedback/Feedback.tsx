@@ -4,11 +4,9 @@ import './Feedback.css'
 export default function Feedback({children} : {children: any}) {
     return(
         <div className="feedback--container">
-            <div className="nav">
-                <nav>
-                    <Link to='/feedback'>Images</Link>
-                    <Link to='/feedback-videos'>Videos</Link>
-                </nav>
+            <div className="navbar">
+                <Link to='/feedback'>Images</Link> |
+                <Link to='/feedback-videos'> Videos</Link>
             </div>
             <div className="content">
                 {children}

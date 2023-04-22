@@ -9,15 +9,19 @@ const PlayerV = () => {
   return (
     <div className="App1">
       <form>
-        Search:<select name="images">
-          <option>recent</option>
-          <option>video1</option>
-          <option>video2</option>
-          <option>video3</option>
-          <option>video4</option>
-        </select>Video
+        <div className="select">
+          <label>Search:</label>
+          <select name="images">
+            <option>recent</option>
+            <option>video1</option>
+            <option>video2</option>
+            <option>video3</option>
+            <option>video4</option>
+          </select>
+        </div>
         <div className="showed1">
-          Show:<select name="images">
+          <label>Show:</label>
+          <select name="images">
             <option>4</option>
             <option>1</option>
             <option>2</option>
@@ -26,19 +30,19 @@ const PlayerV = () => {
         </div>
       </form>
       <div className="videos">
-        <div>
+        <div className="video--item">
           <video src={video1} controls />
           <p>place: Play ground <br />taken:22/02/2023 16:00 PM</p>
         </div>
-        <div>
+        <div className="video--item">
           <video src={video2} controls />
           <p>place: Domitory<br />taken:22/02/2023 16:00 PM</p>
         </div>
-        <div>
+        <div className="video--item">
           <video src={video3} controls />
           <p>place: Domitory <br />taken:22/02/2023 16:00 PM</p>
         </div>
-        <div>
+        <div className="video--item">
           <video src={video4} controls />
           <p>place: Class A <br />taken:22/02/2023 17:00 PM</p>
         </div>
