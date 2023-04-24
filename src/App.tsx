@@ -1,34 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home/home";
+import Login from "./pages/Login/Login";
+import RegisterPage from "./pages/Register/RegisterPage";
+import Sample from "./pages/Sample";
+import "./App.css";
+import Analytics from "./pages/Analytics/analytics";
+import DashBoard from "./pages/DashBoard";
+import Schedule from "./pages/Schedule/Schedule";
+import FeedbackPage from "./pages/feedback";
+import Settings from "./pages/Settings";
+import Help from "./pages/Help";
+import Logout from "./pages/Logout";
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+  interface Task {
+    id: number;
+    text: string;
+    time: string;
+    duration: string;
+  }
+
+  const [tasks,setTasks] = useState<Task[]>([
+    {
+         id: 0,
+         text:'Board meeting',
+         time:'10:20PM',
+         duration:'10:20PM to 11:00PM'
+    },
+    {
+        id: 1,
+        text:'taking lunch',
+        time:'10:20PM',
+        duration:'10:20PM to 11:00PM'
+   },
+   {
+    id: 2,
+    text:'Interviewing other members',
+    time:'10:20PM',
+    duration:'10:20PM to 11:00PM'
+}
+])
+
+const singleTask =   {
+  text:'Board meeting',
+  time:'10:20PM',
+  duration:'10:20PM to 11:00PM'
 }
 
-export default App
+const [activateSideBar,setActivateSideBar] = useState(true)
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<RegisterPage />} />
+        <Route path="/dashboard" element={<Sample><DashBoard username='Mubaraka Sh.' activateSideBar={activateSideBar}/></Sample>}/>
+        <Route path="/analytics" element={<Sample><Analytics tasks={tasks}/></Sample>}/>
+        <Route path="/schedule" element={<Sample><Schedule tasks={singleTask}/></Sample>}/>
+        <Route path="/feedback" element={<Sample><FeedbackPage/></Sample>} />
+        <Route path="/help" element={<Sample><Help/></Sample>} />
+        <Route path="/settings" element={<Sample><Settings/></Sample>} />
+        <Route path="/logout" element={<Sample><Logout/></Sample>} />
+
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

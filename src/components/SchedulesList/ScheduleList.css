@@ -1,0 +1,68 @@
+.list--container {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #2688A6;
+    margin-top: 4.5%;
+}
+
+/* heading styles  */
+
+.navigation {
+    background: rgba(38, 136, 166, 0.69);
+    color: white;
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.heading {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    margin-left: 20px;
+}
+
+.date--heading {
+    margin-left: 20px;
+}
+
+.new--schedule {
+    display: flex;
+    float: right;
+    position: relative;
+    left: 350px;
+    align-items: center;
+}
+
+.new--schedule .icon {
+    margin: 5px 0  0 15px;
+    font-size: 30px;
+}
+
+/* some examples of schedules  */
+
+.schedules--list {
+    width: 95%;
+    height: auto;
+    padding: 15px 35px;
+}
+
+.schedule--component {
+    line-height: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.activity {
+    margin: 0 50px 0 0;
+    width: 100px;
+}
+
+.startTime {
+    margin: 0 25px 0 0;
+}
+
+.endTime {
+    margin: 0 25px;
+}
+
