@@ -17,14 +17,14 @@ import Logout from "./pages/Logout/Logout";
 
 function App() {
 
-  interface Task {
+  interface tasks {
     id: number;
     text: string;
     time: string;
     duration: string;
   }
 
-  const [tasks,setTasks] = useState<Task[]>([
+  const [tasks,setTasks] = useState([
     {
          id: 0,
          text:'Board meeting',
