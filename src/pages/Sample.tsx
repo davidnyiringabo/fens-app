@@ -4,14 +4,12 @@ import "./sample.css"
 import Sidebar from '../components/Sidebar/Sidebar'
 import DashBoard from './DashBoard'
 import { BrowserRouter, Route } from 'react-router-dom'
-import Analytics from './analytics'
+// import Analytics from './analytics'
 
 interface Props{
-    setActivateSideBar:Function,
-    activateSideBar: boolean,
     children: ReactNode
 }
-export default function Sample ({children}) {
+export default function Sample ({children}:Props) {
 const [activateSideBar,setActivateSideBar] = useState(true)
 
 

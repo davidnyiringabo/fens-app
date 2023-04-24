@@ -4,7 +4,7 @@ import { SiGoogleanalytics } from 'react-icons/si'
 import { MdHomeFilled ,MdOutlineHelpOutline, MdOutlineLogout } from 'react-icons/md'
 import { VscFeedback } from 'react-icons/vsc'
 import { IoMdSettings } from 'react-icons/io'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 interface Props {
     activateSideBar: boolean
@@ -16,8 +16,8 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
             { activateSideBar && <div className='container'>
 
             <div className="container--upper">
-                <Link to={"/dashboard#f"}>
-                    <div className="link-container active">
+                <NavLink to={"/dashboard#f"}>
+                    <div className="link-container">
                         <div className="link-item">
                             <MdHomeFilled />
                         </div>
@@ -25,8 +25,8 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Dashboard
                         </div>
                     </div>
-                </Link>
-                <Link to={"/schedule"}>
+                </NavLink>
+                <NavLink to={"/schedule"}>
                     <div className="link-container">
                         <div className="link-item">
                             <CiClock2 />
@@ -35,9 +35,9 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Schedules
                         </div>
                     </div>
-                </Link>
+                </NavLink>
                 
-                <Link to={"/analytics"}>
+                <NavLink to={"/analytics"}>
                     <div className="link-container">
                         <div className="link-item">
                             <SiGoogleanalytics />
@@ -46,9 +46,9 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Analytics
                         </div>
                     </div>
-                </Link>
+                </NavLink>
                 
-                <Link to={"/feedback"}>
+                <NavLink to={"/feedback"}>
                     <div className="link-container">
                         <div className="link-item">
                             <VscFeedback />
@@ -57,12 +57,12 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Feedback
                         </div>
                     </div>
-                </Link>
+                </NavLink>
                
             </div>
 
             <div className="container--lower">
-                <Link to={"/help"}>
+                <NavLink to={"/help"}>
                     <div className="link-container">
                         <div className="link-item">
                             <MdOutlineHelpOutline />
@@ -71,9 +71,9 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Help
                         </div>
                     </div>
-                </Link>
+                </NavLink>
                
-                <Link to={"/settings"}>
+                <NavLink to={"/settings"}>
                     <div className="link-container">
                     
                         <div className="link-item">
@@ -83,10 +83,10 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Settings
                         </div>
                     </div>
-                </Link>
+                </NavLink>
                 
 
-                <Link to={"/logout"}>
+                <NavLink to={"/logout"}>
                     <div className="link-container logout">
                         <div className="link-item">
                             <MdOutlineLogout />
@@ -95,7 +95,7 @@ const Sidebar:React.FC<Props>=({activateSideBar})=> {
                             Logout
                         </div>
                     </div>
-                </Link>
+                </NavLink>
                
             </div>
             </div>}

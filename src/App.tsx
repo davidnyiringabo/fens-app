@@ -10,17 +10,11 @@ import DashBoard from "./pages/DashBoard";
 import Schedule from "./pages/Schedule/Schedule";
 import FeedbackPage from "./pages/feedback";
 import Settings from "./pages/Settings";
-import Help from "./pages/Help";
+import Help from "./pages/Help/Help";
 import Logout from "./pages/Logout";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-
-  interface tasks {
-    id: number;
-    text: string;
-    time: string;
-    duration: string;
-  }
 
   const [tasks,setTasks] = useState([
     {
@@ -54,17 +48,15 @@ const [activateSideBar,setActivateSideBar] = useState(true)
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<RegisterPage />} />
         <Route path="/dashboard" element={<Sample><DashBoard username='Mubaraka Sh.' activateSideBar={activateSideBar}/></Sample>}/>
-        <Route path="/analytics" element={<RegisterPage />}/>
-         <Route path="/schedule" element={<Sample><Schedule tasks={singleTask}/></Sample>}/>
-       <Route path="/feedback" element={<Sample><FeedbackPage/></Sample>} />
-        <Route path="/help" element={<Sample><Help/></Sample>} />
-        <Route path="/settings" element={<Sample><Settings/></Sample>} />
-        <Route path="/logout" element={<Sample><Logout/></Sample>} /> 
-
+        <Route path="/schedule" element={<Sample><Schedule tasks={singleTask}/></Sample>}/>
+        <Route path="/feedback" element={<Sample><FeedbackPage/></Sample>}/>
+        <Route path="/help" element={<Sample><Help/></Sample>}/>
+        <Route path="/settings" element={<Sample><Settings/></Sample>}/>
+        <Route path="/logout" element={<Sample><Logout/></Sample>}/>
       </Routes>
     </Router>
   );

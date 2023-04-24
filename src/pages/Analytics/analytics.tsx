@@ -8,21 +8,6 @@ import startImg from "/star-fill.png"
 import Linechart from "./Line"
 import DoughnutChat from './Doughnut'
 
-interface Props{
-    tasks: task[]
-
-}
-
-interface task{
-    id: number,
-    text: string,
-    time: string,
-    duration: string
-}
-
-
-
-
 const Analytics =()=> {
 
     return (
