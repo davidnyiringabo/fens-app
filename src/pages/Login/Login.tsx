@@ -14,7 +14,7 @@ import { FirstEllipse } from "./../../assets/svg";
 import { SecondEllipse } from "./../../assets/svg";
 
 export default function Login() {
-  useEffect(() => {
+  useEffect(() => {    
     const passwordHide = document.querySelector(".password-hide-icon");
     const passwordShow = document.querySelector(".password-show-icon");
     const passwordField = document.querySelector("#orgPasswd");
@@ -38,7 +38,7 @@ export default function Login() {
       passwordShow?.classList.remove("password-hide-icon");
       passwordShow?.classList.add("active");
     });
-  }, []);
+  }, []); 
 
   const emailLabel = "Email";
   const emailType = "email";
