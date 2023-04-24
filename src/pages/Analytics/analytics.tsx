@@ -8,23 +8,7 @@ import startImg from "/star-fill.png"
 import Linechart from "./Line"
 import DoughnutChat from './Doughnut'
 
-interface Props{
-    tasks: object[]
-
-}
-
-interface task{
-    id: number,
-    text: string,
-    time: string,
-    duration: string
-}
-
-
-
-
-const Analytics : React.FC<Props>= ({tasks})=> {
-const [activateSideBar,setActivateSideBar] = useState(true)
+const Analytics =()=> {
 
     return (
                 <div className='analytics-page-container'>
@@ -75,31 +59,7 @@ const [activateSideBar,setActivateSideBar] = useState(true)
                                     <h2>Status</h2>
 
                                 </div>
-                                {tasks.map((task:any)=>{
-                                    return(
-                                        <div className='completed-task'>
-                                            <div className='contained'>
-                                              <h6><img src={dotImg}/>  {task.text}</h6>
-
-                                            </div>
-
-                                            <div className="contained">
-                                                <h6>{task.time}</h6>
-
-                                            </div>
-
-                                            <div className="contained">
-                                             <img src={progressBarImg}/>
-                                                
-                                            </div>
-
-                                            <div className="contained">
-                                                <h6>completed</h6>
-                                                
-                                            </div>
-                                        </div>
-                                    )
-                                })}
+                               
                             </div>
                         </div>
 

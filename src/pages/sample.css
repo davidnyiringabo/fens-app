@@ -2,3 +2,6 @@
     width: 100%;
     height: 900px;
 }
+.active{
+    background: #00000050;
+}

@@ -1,6 +1,6 @@
 .container {
-    width: 240px;
-    height: 900px;
+    width: 240px !important;
+    height: 900px !important;
     background-color: #367588;
     position: relative;
     top: 70px;
