@@ -1,0 +1,64 @@
+.logout--container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo--container {
+    width: 60%;
+    margin: 70px 0 120px 150px;
+}
+
+.main--container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main--container hr {
+    width: 395px;
+}
+
+.main--container .circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main--container .circle .logout--icon {
+    font-size: 60px;
+    color: #436E7A;
+}
+
+.logout--message {
+    width: 100%;
+    /* background-color: orange; */
+    height: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout--footer {
+    width: 100%;
+    /* background-color: blue; */
+    height: 60px;
+    text-align: center;
+}
+
+.logout--footer .logout--link {
+    color: #436E7A;
+}
+
+.logout--footer p {
+    margin-top: 30px;
+}

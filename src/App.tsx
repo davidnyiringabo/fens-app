@@ -13,7 +13,7 @@ import PlayerV from "./components/Videos/videoPlayer";
 import Shower from "./components/Images/imageShower";
 import Settings from "./pages/Settings";
 import Help from "./pages/Help";
-import Logout from "./pages/Logout";
+import Logout from "./pages/Logout/Logout";
 
 function App() {
 
@@ -66,7 +66,7 @@ const [activateSideBar,setActivateSideBar] = useState(true)
         <Route path="/feedback-videos" element={<Sample><Feedback><PlayerV/></Feedback></Sample>} />
         <Route path="/help" element={<Sample><Help/></Sample>} />
         <Route path="/settings" element={<Sample><Settings/></Sample>} />
-        <Route path="/logout" element={<Sample><Logout/></Sample>} />
+        <Route path="/logout" element={<Logout/>} />
 
       </Routes>
     </Router>
