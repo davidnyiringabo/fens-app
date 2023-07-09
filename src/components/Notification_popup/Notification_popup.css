@@ -1,0 +1,31 @@
+.notification_popup {
+    width: 200px;
+    height: 160px;
+    background-color: white;
+    box-shadow: -3px 4px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 15px 0 0 10px;
+}
+
+.notification_popup .link {
+    position: relative;
+    bottom: 0;
+    font-size: 12px;
+    align-self: right;
+    color: #367588;
+}
+
+.notification_popup_item {
+    width: 100%;
+    height: 30px;
+    text-align: left;
+}
+
+.notification_popup_item p {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}

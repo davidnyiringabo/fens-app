@@ -1,7 +1,6 @@
 .list--container {
     width: 100%;
     height: 180px;
-    border: 1px solid #2688A6;
     margin-top: 4.5%;
 }
 
@@ -35,8 +34,9 @@
 }
 
 .new--schedule .icon {
-    margin: 5px 0  0 15px;
+    margin: 5px 0  0 10px;
     font-size: 30px;
+    border: none;
 }
 
 /* some examples of schedules  */

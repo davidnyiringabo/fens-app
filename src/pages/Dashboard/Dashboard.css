@@ -1,0 +1,13 @@
+.overall-container {
+    display: flex;
+}
+
+.section-container--one {
+    position: absolute;
+    background-color: red;
+    width: 82%;
+    height: 660px;
+    left: 270px;
+    top: 100px;
+    overflow-y: scroll;
+}

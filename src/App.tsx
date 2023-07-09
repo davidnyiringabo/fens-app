@@ -8,11 +8,12 @@ import "./App.css";
 import Analytics from "./pages/Analytics/analytics";
 import DashBoard from "./pages/DashBoard";
 import Schedule from "./pages/Schedule/Schedule";
-import FeedbackPage from "./pages/feedback";
+import FeedbackPage from "./pages/Feedback/Feedback";
+import PlayerV from "./components/Videos/videoPlayer";
+import Shower from "./components/Images/imageShower";
 import Settings from "./pages/Settings";
 import Help from "./pages/Help/Help";
-import Logout from "./pages/Logout";
-import Navbar from "./components/Navbar/Navbar";
+import Logout from "./pages/Logout/Logout";
 
 function App() {
 
@@ -48,15 +49,17 @@ const [activateSideBar,setActivateSideBar] = useState(true)
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<RegisterPage />} />
         <Route path="/dashboard" element={<Sample><DashBoard username='Mubaraka Sh.' activateSideBar={activateSideBar}/></Sample>}/>
+        {/* <Route path="/analytics" element={<Sample><Analytics tasks={tasks}/></Sample>}/> */}
         <Route path="/schedule" element={<Sample><Schedule tasks={singleTask}/></Sample>}/>
-        <Route path="/feedback" element={<Sample><FeedbackPage/></Sample>}/>
-        <Route path="/help" element={<Sample><Help/></Sample>}/>
-        <Route path="/settings" element={<Sample><Settings/></Sample>}/>
-        <Route path="/logout" element={<Sample><Logout/></Sample>}/>
+        <Route path="/feedback" element={<Sample><FeedbackPage/></Sample>} />
+        <Route path="/help" element={<Sample><Help/></Sample>} />
+        <Route path="/settings" element={<Sample><Settings/></Sample>} />
+        <Route path="/logout" element={<Sample><Logout/></Sample>} />
+
       </Routes>
     </Router>
   );

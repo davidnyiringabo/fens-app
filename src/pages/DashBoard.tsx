@@ -11,7 +11,6 @@ import "react-toastify/dist/ReactToastify.css"
 import './dashboard.css'
 import plus from "../assets/+.svg"
 import plusCirc from "../assets/plus-circle-dotted.svg"
-
 import Notification from "../components/Notification/Notification"
 import { useState,useEffect } from "react";
 import check from "../assets/check1.png"
@@ -289,7 +288,6 @@ const handleFormSubmit = ()=>{
                         <h6 style={{alignItems:'center',cursor:'pointer',textAlign:'right'}}>View more content <span>  <img src={right} style={{height:'10px',padding:'3px 4px 0px'}}/></span></h6>
 
                    </div>
-
 
                 </div>
                 {/* ---------------------for the right content  */}

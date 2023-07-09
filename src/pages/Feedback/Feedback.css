@@ -1,0 +1,104 @@
+.feedback--container {
+    width: 100%;
+    height: 123vh;
+    margin-top: 10vh;
+    padding-left: 2%;
+}
+
+.navbar {
+    height: 30px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Both image and video JVM's styles  */
+.App1 {  
+    position:absolute;
+    top: 5em;
+    width: 100%;
+}
+
+form{  
+    width: 100%;
+    display: flex;
+    margin-top: 3em;
+}
+
+.select {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.select select {
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #367588;
+}
+
+.images{  
+    margin-top: 2em;
+}
+
+  
+.images p,
+.videos p {  
+    font-size: 1em;
+}
+  
+.images img{  
+    border-radius: 8px;
+    width: 80%;
+    height: 220px;
+}
+  
+.a1{
+    width: 100px;
+    position: relative;
+    top: 2rem;
+    left: 70rem;
+}
+  
+.showed1{
+    flex: 0 0 30%;  
+    max-width: 30%;
+    position: absolute;
+    right: 20em;
+    display: flex;
+    align-items: center;
+}
+
+.showed1 select {
+    width: 50px;
+    height: 40px;
+    margin: 0 10px;
+}
+  
+.videos, .images{  
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.videos div{  
+    border-radius: 10px 10px;
+    padding-left: 1em;
+}
+  
+video{
+    border-radius: 10px 10px; 
+    width: 17em;
+    height: 15em;
+}
+
+.image--item {
+    width: 30%;
+    margin: 0 30px 30px 0;
+}
+
+
+
+@font-face {
+    font-family: snof;
+    src: url(CELTG___.TTF);
+}
