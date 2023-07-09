@@ -11,6 +11,7 @@ import Schedule from "../Schedules/Schedule";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./hero.css";
+
 import plus from "../../assets/+.svg";
 import plusCirc from "../../assets/plus-circle-dotted.svg";
 
