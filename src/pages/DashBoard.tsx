@@ -1,17 +1,14 @@
 
 import React from "react";
-import propTypes, { any } from "prop-types"
 import schedulecomp from "../assets/image3.png"
 import addIcon from "../assets/plus-circle1.png"
 import deleteIcon from "../assets/x-circle1.png"
 import right from "../assets/chevron-right.svg"
 import caret from "../assets/caret-down-fill.svg"
 import Calender from "../components/Calender/Calender";
-import Days from "../components/Calender/Days";
-import Schedule from "../components/Schedules/Schedule";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
-import './hero.css'
+import './dashboard.css'
 import plus from "../assets/+.svg"
 import plusCirc from "../assets/plus-circle-dotted.svg"
 
@@ -38,13 +35,6 @@ const  members=[
 
 interface Props{
     username: string
-    Calender: Function,
-    tasks: object[],
-    firstTasks: object[],
-    completed:object[],
-    time: string,
-    organisations: string[],
-    organsm: object,
     activateSideBar: boolean
     
 }
@@ -52,7 +42,6 @@ interface Props{
 let time = new Date();
 const month = (time.getMonth())
 const day = time.getDay()
-// const day =4
 const date = time.getDate()
 const hour = time.getHours()
 const minute = time.getMinutes()
@@ -65,14 +54,11 @@ export interface Organisation {
     name: string;
 }
 
-
-
-
-const Hero: React.FC<Props>= ({username,activateSideBar})=>{
+const DashBoard : React.FC<Props>= ({username,activateSideBar})=>{
 const [memberModal,setMemberModal] = useState(false);
 
 
-const [background,sebackground] = useState(false)
+const [background,setbackground] = useState(false)
 
 const [openDrop,setOpenDrop] = useState(false)
 // -------------------------------------------------FOR TASKS VARIABLES--------------------------------------------------------
@@ -147,21 +133,21 @@ const deleteNotifications = ()=>{
     })
 }
 
-// --------------------------HANDLING FORM SUBMIT----------------------------------------------
+// --------------------------HANDLING ADD SCHEDULE FORM SUBMIT----------------------------------------------
 
 const handleFormSubmit = ()=>{
 
 }
-// ----------------------------------------------------------------    
+// -----------------------------------------------------------------------------------------------------------   
 
     return(
-        <main className={ !activateSideBar ? 'coverwidth' : ''} >
+        <main className={ !activateSideBar ? 'coverwidth' : ''}>
             <div className={"container-hero" + `${ activateSideBar? ' coverhero' : ''}`}>
                 {/* --------for the left content */}
 
             
                 
-                <div className="container-left">
+                <div className="container-left" id="f">
                    <div className="welcome-container">
                     <h4>Welcome back {username}</h4>
                    </div>
@@ -182,87 +168,87 @@ const handleFormSubmit = ()=>{
                     { openAddScheduleModal && (
                         (
                             <div className="modal">
-                            <div className="overlay" >
-                            <div className="addScheduleModal">
+                                <div className="overlay" >
+                                    <div className="addScheduleModal">
 
-                                <button className='close-modal' onClick={closeAddSchedule}  style={{borderRadius:'10px', borderColor:'#333'}}>close</button>
+                                        <button className='close-modal' onClick={closeAddSchedule}  style={{borderRadius:'10px', borderColor:'#333'}}>close</button>
 
-                                <div className="addAScheduleForm">
-                                    <form className="SchedulemodalForm" onSubmit={(e)=>{
-                                        e.preventDefault()
-                                        handleFormSubmit
-                                        }}>
-                                        <h3>Schedule Event</h3>
+                                        <div className="addAScheduleForm">
+                                            <form className="SchedulemodalForm" onSubmit={(e)=>{
+                                                e.preventDefault()
+                                                handleFormSubmit
+                                                }}>
+                                                <h3>Schedule Event</h3>
 
-                                        <div className="form-control">
-                                            <label>Time: </label>
-                                            <input type="time" required/>
+                                                <div className="form-control">
+                                                    <label>Time: </label>
+                                                    <input type="time" required/>
+                                                </div>
+
+                                                <div className="form-control">
+                                                    <label>Event: </label>
+                                                    <textarea placeholder="Eg. Going to sleep" required></textarea>
+                                                </div>
+
+                                                <div className="form-control">
+                                                    <label>Sound: </label>
+                                                    <select required>
+                                                        <option value="chimes">Chimes</option>
+                                                        <option value="Xylophone">Xylophone</option>
+                                                        <option value="Bounce">Bounce</option>
+                                                        <option value="Echo">Echo</option>
+                                                        <option value="Ascending">Ascending</option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="form-control">
+                                                    <label>Notify for: </label>
+                                                    <select required>
+                                                    <option value="5 Minutes">5 Minutes</option>
+                                                    <option value="10 Minutes">10 Minutes</option>
+                                                    <option value="30 Minutes">30 Minutes</option>
+                                                    <option value="1 Hour">1 Hour</option>
+                                                    <option value="2 Hours">2 Hours</option>
+                                                    <option value="1 day">1 Day</option>
+                                                    </select>
+                                                    
+                                                    
+
+                                                </div>
+
+                                                <div className="notifyday">
+                                                    <label style={{fontSize:'18px'}}>Notify on </label>
+                                                    <div className="days">
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Mon</button>
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Tue</button>
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Wed</button>
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Thur</button>
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Fri</button>
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Sat</button>
+                                                    <button className="notifyDay" onClick={()=>setbackground(!background)}>Sun</button>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div className="form-control" >
+                                                    <label>Location: </label>
+                                                    <select required>
+                                                        <option value=""></option>
+                                                        <option value="">Kigali</option>
+                                                        <option value="">Muhanga</option>
+                                                        <option value="">Newyork</option>
+                                                    </select>
+                                                </div>
+
+                                                <div className="addmodalbuttons">
+                                                    <button className="save">Save</button>
+                                                    <button className="cancel" onClick={closeAddSchedule}>cancel</button>
+                                                </div>
+                                                
+                                            </form>
                                         </div>
-
-                                        <div className="form-control">
-                                            <label>Event: </label>
-                                            <textarea placeholder="Eg. Going to sleep" required></textarea>
-                                        </div>
-
-                                        <div className="form-control">
-                                            <label>Sound: </label>
-                                            <select required>
-                                                <option value="chimes">Chimes</option>
-                                                <option value="Xylophone">Xylophone</option>
-                                                <option value="Bounce">Bounce</option>
-                                                <option value="Echo">Echo</option>
-                                                <option value="Ascending">Ascending</option>
-                                            </select>
-                                        </div>
-
-                                        <div className="form-control">
-                                            <label>Notify for: </label>
-                                            <select required>
-                                            <option value="5 Minutes">5 Minutes</option>
-                                            <option value="10 Minutes">10 Minutes</option>
-                                            <option value="30 Minutes">30 Minutes</option>
-                                            <option value="1 Hour">1 Hour</option>
-                                            <option value="2 Hours">2 Hours</option>
-                                            <option value="1 day">1 Day</option>
-                                            </select>
-                                            
-                                            
-
-                                        </div>
-
-                                        <div className="notifyday">
-                                            <label style={{fontSize:'18px'}}>Notify on </label>
-                                            <div className="days">
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Mon</button>
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Tue</button>
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Wed</button>
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Thur</button>
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Fri</button>
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Sat</button>
-                                            <button className="notifyDay" onClick={()=>sebackground(!background)}>Sun</button>
-                                            </div>
-                                            
-                                        </div>
-
-                                        <div className="form-control" >
-                                            <label>Location: </label>
-                                            <select required>
-                                                <option value=""></option>
-                                                <option value="">Kigali</option>
-                                                <option value="">Muhanga</option>
-                                                <option value="">Newyork</option>
-                                            </select>
-                                        </div>
-
-                                        <div className="addmodalbuttons">
-                                            <button className="save">Save</button>
-                                            <button className="cancel">cancel</button>
-                                        </div>
-                                        
-                                    </form>
+                                    </div>
                                 </div>
-                            </div>
-                            </div>
                             </div>
                         )
                     )
@@ -382,18 +368,18 @@ const handleFormSubmit = ()=>{
                             </div>
 
                              {memberModal && (
-                            <div className="remove-or-add-member">
-                                            <div className="title">
-                                                <h6>Remove a member ?</h6>
-                                            </div>
+                                <div className="remove-or-add-member">
+                                                <div className="title">
+                                                    <h6>Remove a member ?</h6>
+                                                </div>
 
-                                            <div className="pop-body" style={{width:'100%',height:'60%',display:'flex',alignItems:'center',justifyContent:'center',gap:'5%'}}>
-                                            <button className="addMember" style={{width:'30%',height:'60%',background:'#D565',border:'none',borderRadius:'10px',fontSize:'17px',fontWeight:'700'}} onClick={()=>setMemberModal(!memberModal)}>Remove</button>
-                                            <button className="view" style={{width:'40%',height:'60%',background:'#fff',border:'none',borderRadius:'10px',fontSize:'17px',fontWeight:'700'}}>View details</button>
-                                            </div>
+                                                <div className="pop-body">
+                                                <button className="addMember" onClick={()=>setMemberModal(!memberModal)}>Remove</button>
+                                                <button className="view" onClick={()=>setMemberModal(!memberModal)}>View details</button>
+                                                </div>
 
-                                        </div>
-                                     )} 
+                                            </div>
+                              )} 
 
                             <div className="addTeamMember">
                                 <button className="addTeam"><img src={plus} style={{width:'13%'}}/> <h4 style={{fontSize:'13px'}}>Add a team-mate</h4></button>
@@ -406,6 +392,6 @@ const handleFormSubmit = ()=>{
     )
 }
 
-export default Hero
+export default DashBoard
 
 

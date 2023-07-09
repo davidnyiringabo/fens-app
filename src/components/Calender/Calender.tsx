@@ -11,14 +11,8 @@ import Schedule from "../Schedules/Schedule";
         openAddSchedule: MouseEventHandler
         day: number,
         date: number
-        tasks: tasks,
     }
-    interface tasks{
-        time: string,
-        task:string,
-        duration:string
-    }
-
+    
  const Calender: React.FC<Props>=({month,date,day,openAddSchedule})=>{
     const tasks={
         time:'9:00 AM',

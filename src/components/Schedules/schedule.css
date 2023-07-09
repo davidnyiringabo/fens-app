@@ -20,11 +20,11 @@
 }
 .single-task{
     width: 60%;
-    height: 65%;
+    height: 85%;
     border: 1px #6d6b6b solid;
     border-left: 12px #10926E solid;
     border-radius: 10px;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     
 }
 

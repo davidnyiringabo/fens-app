@@ -1,0 +1,183 @@
+.main-help-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 11vh;
+    /* gap: 3%; */
+}
+
+.left-help-content{
+    width: 70%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2%;
+    /* border: 2px solid; */
+    gap: 4%;
+}
+.right-help-content{
+    width: 30%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0 2%;
+}
+.right-help-content h4{
+    font-size: 15px;
+    padding: 0 5%;
+}
+.faqs-container{
+    width: 97%;
+    height: 86% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #367588;
+    overflow-y: auto;
+    gap: 3%;
+}
+.singlefaq{
+    width: 95%;
+    height: 30%;
+    background: rgba(54, 117, 136, 0.3)
+    ;
+    border-radius: 10px;
+    padding: 1% 2% 1% 4%;
+}
+.single-faq-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10%;
+    /* padding: 0% 5%; */
+}
+.single-faq-header img{
+    width: 30px;
+    height: 30px;
+}
+.singlefaq p{
+    font-size: 14px;
+    font-weight:bold;
+}
+.upper-help-content{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.upper-content-header h5{
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 1.4%;
+}
+.upper-content-header h3{
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 1.4%;
+}
+.steps-overview{
+    width:100%;
+    margin-top: 3%;
+}
+
+.form-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container h5{
+    width: 90%;
+    text-align: left;
+    padding-bottom: 3%;
+    font-size: 18px;
+}
+.help-form{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+}
+
+.help-form textarea{
+    width: 80%;
+    height: 70%;
+    border: 2px solid #ccc;
+    resize: none;
+    padding: 1% 2%;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #ccc;
+
+}
+
+.help-form textarea::placeholder{
+    color: #ccc;
+    font-weight: 700;
+}
+
+.help-form textarea:focus{
+    outline: 3px solid #ccc;
+}
+
+.help-form .submit-help-form {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: right;
+}
+.help-form button{
+    width: 30%;
+    height: 100%;
+    border: none;
+    background: #367588;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-container h3{
+    width: 70%;
+    text-align: right;
+    font-size: 17px;
+}
+
+.bottom-content{
+    width: 100%;
+    height: 13%;
+    background: #c4c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    border-radius: 20px;
+}
+
+.bottom-content button{
+    width: 20%;
+    height: 40%;
+    background: #367588;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bottom-content .left-bottom-content h3{
+    font-size: 18px;
+}
+
+.bottom-content .left-bottom-content h6{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 3%;
+}
