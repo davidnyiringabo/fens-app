@@ -39,7 +39,7 @@ display: flex;
 .welcome-container{
     background: var(--theme-color);
     width: 70%;
-    height: 8%;
+    height: 5%;
     border-radius: 10px;
     text-align: center;
 }
@@ -50,7 +50,7 @@ display: flex;
 }
 .schedule-container{
     width: 100%;
-    height: 22%;
+    height: 15%;
     margin-top: 1.5rem;
     background: #FFFFFF;
     border-radius: 10px;
@@ -80,7 +80,7 @@ display: flex;
 .button-view-schedule{
     width: 63%;
     height: 25%;
-    background: #10926E;
+    background: #000;
     border: none;
     border-radius: 10px;
     font-size: 1em;
@@ -115,7 +115,7 @@ display: flex;
 .addSchedule{
     width: 30%;
     height: 95%;
-    background: #fff;
+    background: #000;
     border: none;
     border-radius: 10px;
     display: flex;
@@ -125,11 +125,12 @@ display: flex;
     font-size: 23px;
     cursor: pointer;
     font-weight: 900;
+    color: #fff;
 }
 
 .notifications-placeholder,.completedTask-placeholder{
     width: 90%;
-    height: 22%;
+    height: 27%;
     background: #fff;
     padding: 2%;
     margin-top: 1rem;
