@@ -2,6 +2,8 @@ import "./login.css";
 
 import { useEffect } from "react";
 import {useNavigate} from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -67,7 +69,9 @@ export default function Login() {
       </div>
 
       <div className="logo">
-        <img src={Logo} alt="SNoF-logo" />
+        <Link to="/">
+          <img src={Logo} alt="SNoF-logo" />
+        </Link>
       </div>
       <h2>Login into your Organisation account</h2>
       <form onSubmit={handleFormSubmit}>

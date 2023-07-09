@@ -1,26 +1,31 @@
-import { useState } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Sidebar from '../../components/Sidebar/side'
-import Analytics from '../Analytics/analytics'
-import Hero from '../Hero/Hero'
-import './Dashboard.css'
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Hero from "../../components/Hero/Hero";
+import Schedule from "../../pages/Schedule/Schedule";
+import Analytics from "../../components/Analytics/analytics";
 
-interface Props{
-    setActivateSideBar:Function,
-    activateSideBar: boolean
+interface Props {
+  setActivateSideBar: Function;
+  activateSideBar: boolean;
 }
-export default function Dashboard (props) {
-const [activateSideBar,setActivateSideBar] = useState(true)
+export default function Dashboard() {
+  const [activateSideBar, setActivateSideBar] = useState(true);
 
-    return (
-        <div className='overall-container'>
-            <Navbar setActivateSideBar={setActivateSideBar} activateSideBar={activateSideBar}/>
-            <div className='section-container row'>
-                <Sidebar activateSideBar={activateSideBar}/>
-            </div>
-            <div className="section-container--one">
-                <Hero username={'Mr Abushali'} Calender={undefined} tasks={[]} firstTasks={[]} completed={[]} time={''} organisations={[]} organsm={undefined} activateSideBar={false} />
-            </div>
-        </div>
-    )
+  return (
+    <div className="overall-container">
+      <Navbar
+        setActivateSideBar={setActivateSideBar}
+        activateSideBar={activateSideBar}
+      />
+      <div className="section-container row">
+        <Sidebar activateSideBar={activateSideBar} />
+        <Hero username="Mubaraka Sh." activateSideBar={activateSideBar} />
+
+        {/* <Schedule /> */}
+        {/* <Analytics/> */}
+      </div>
+    </div>
+  );
 }

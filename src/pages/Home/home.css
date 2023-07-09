@@ -44,6 +44,8 @@ h2 {
 }
 
 .links a {
+  z-index: 999;
+  color: black;
   font-size: 20;
   margin: 0 10px;
 }

@@ -1,6 +1,6 @@
 .container {
-    width: 240px !important;
-    height: 900px !important;
+    width: 310px;
+    height: 900px;
     background-color: #367588;
     position: relative;
     top: 70px;
@@ -63,16 +63,20 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 1000px){
-    .container{
-        width: 5%;
-        min-width: 3rem;
-    }
-    .link-container .link-name{
-        display: none;
-    }
-    .link-container .link-name:focus{
-        display: block;
-        position: absolute;
-    }
+a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 5%;
+    min-width: 3rem;
+  }
+  .link-container .link-name {
+    display: none;
+  }
+  .link-container .link-name:focus {
+    display: block;
+    position: absolute;
+  }
 }
