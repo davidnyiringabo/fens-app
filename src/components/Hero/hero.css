@@ -37,11 +37,12 @@ display: flex;
 }
 
 .welcome-container{
-    background: var(--theme-color);
+    background: var(--theme-color) !important;
     width: 70%;
     height: 5%;
     border-radius: 10px;
     text-align: center;
+    display: none;
 }
 .welcome-container h4{
     padding: 6% 20% 3% 6% ;

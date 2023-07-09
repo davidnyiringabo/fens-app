@@ -97,13 +97,7 @@ const Hero: React.FC<Props> = ({ username, activateSideBar }) => {
       text: "taking lunch",
       time: "10:20PM",
       duration: "10:20PM to 11:00PM",
-    },
-    {
-      id: 2,
-      text: "Interviewing other members",
-      time: "10:20PM",
-      duration: "10:20PM to 11:00PM",
-    },
+    }
   ]);
 
   // ---------------------------------------------------------------------------------------------------------------------------------
